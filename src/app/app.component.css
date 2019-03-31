@@ -1,138 +1,17 @@
-
-.backgroundTop{
-    background-image: url(https://i.ibb.co/Xz0dPvk/01-Cerro.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: top;
-}
-
-.butlogin{
-    width: 130px;
-    background-color: white;
-    border: none3;
-    color: gray;
-    text-align: center;
-    text-decoration: none;
-    display:block;
-    margin-top: 8px;
-    margin-right: 15px;
-    margin-left: 15px;
-    font-size: 12px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.button{
-    width: 19%;
-    background-color: rgba(49,49,49,0.70);
-    border: 2px solid rgba(250,250,250,0.7);
-    color: white;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-    font-weight: bold;
-    cursor: pointer;
-    -webkit-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    cursor: pointer;
-}
-
-.button1 {
-    background-color: rgba(49,49,49,0.70);
-      border: 2px solid rgba(250,250,250,0.7);
-    color: white;
-}
-
-.button1:hover {
-    background-color: rgba(144,143,144,0.70);
-      border: 2px solid rgba(250,250,250,0.7);
-}
-.button1:active {
-    background-color: rgb(244,243,244);
-      border: 2px solid rgba(250,250,250,0.7);
-}
-.borde1{
-    width: 100px;
-}
-
-.borde2{
-    float: right;
-    margin: 11%;
-}
-
-.borde3{
-    float: right;
-    margin-top: 52px;
-}
-
-.Tourist{
-    width: 280px;
-    height: auto;
-}
-
-.FontUser{
-    text-align: center;
-    color: white;
-    font-size: 13px;
-    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-}
-
-.backgroundBody{
-    background-image: url(https://i.ibb.co/HpCkxLZ/04-Fondo-Blanco.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-}
-
-.backgroundCuadro{
-    background-image: url(https://i.ibb.co/RcMgthY/06-cuadro.png);	
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-}
-
-.backgroundBlue{
-    background-image: url(https://i.ibb.co/xftmZb0/07-Fondo-Azul-full.png);	
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-}
-
-.FontC1{
-    margin-top: 20px;
-    text-align: center;
-    color: rgb(161,208,232);
-    font-size: 23px;
-    transform:scaleY(1.1);
-    line-height: 30px;
+@font-face{
     font-family: Eras;
-    text-shadow: 2px 2px 4px black;
+    src: url("font/ErasBoldITC.ttf");
 }
-.FontC2{
-    text-align: center;
-    color: rgb(54,54,54);
-    font-size: 18px;
-    font-family: calisto;
-    font-weight: 400;
-    font-size-adjust: auto;
-    line-height: 20px;
-}
-
-.FontC3{
-    text-align-last: right;
-    padding-top: 5px;
-    color: rgb(102,102,102);
-    font-size: 20px;
-    font-size-adjust: auto;
+@font-face{
     font-family: BERNHC;
-    
+    src: url("font/BERNHC.TTF");
+}
+@font-face{
+    font-family: BRITANIC;
+    src: url("font/BRITANIC.TTF");
+}
+@font-face{
+    font-family: calisto;
+    src: url("font/CalistoMTFett.ttf");
 }
 
-.PiePag{
-    background-color: rgb(43,44,44);
-    height: 40px;
-    text-align: center;
-}

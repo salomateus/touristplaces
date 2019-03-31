@@ -1,0 +1,79 @@
+.borde2{
+    float: right;
+    margin: 10%;
+}
+
+.borde3{
+    float: right;
+    margin-top: 52px;
+}
+
+.Tourist{
+    width: 280px;
+    height: auto;
+}
+
+.FontUser{
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+.backgroundBody{
+    background-image: url(https://i.ibb.co/HpCkxLZ/04-Fondo-Blanco.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.backgroundCuadro{
+    background-image: url(https://i.ibb.co/RcMgthY/06-cuadro.png);	
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.backgroundBlue{
+    background-image: url(https://i.ibb.co/xftmZb0/07-Fondo-Azul-full.png);	
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.FontC1{
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(161,208,232);
+    font-size: 23px;
+    font-size-adjust: initial;
+    transform:scaleY(1.1);
+    line-height: 30px;
+    font-family: Eras;
+    text-shadow: 2px 2px 4px black;
+}
+.FontC2{
+    text-align: center;
+    color: rgb(54,54,54);
+    font-size: 18px;
+    font-family: calisto;
+    font-weight: 400;
+    font-size-adjust: auto;
+    line-height: 20px;
+}
+
+.FontC3{
+    text-align-last: right;
+    padding-top: 5px;
+    color: rgb(102,102,102);
+    font-size: 20px;
+    font-size-adjust: auto;
+    font-family: BERNHC;
+    
+}
+
+.PiePag{
+    background-color: rgb(43,44,44);
+    height: 40px;
+    text-align: center;
+}
