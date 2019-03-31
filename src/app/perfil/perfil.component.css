@@ -1,0 +1,42 @@
+.backgroundBlue{
+    background-image: url(https://i.ibb.co/xftmZb0/07-Fondo-Azul-full.png);	
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.backgroundBody{
+    background-image: url(https://i.ibb.co/HpCkxLZ/04-Fondo-Blanco.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.backgroundG{
+    background-color: rgba(36,60,52,0.65);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.backgroundAM{
+    background-image: url("https://i.ibb.co/Bckgv41/11-fondo-Marino.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.borde3{
+    float: right;
+    margin-top: 52px;
+}
+
+.borde1{
+    width: 100px;
+}
+
+.PiePag{
+    background-color: rgb(43,44,44);
+    height: 40px;
+    text-align: center;
+}

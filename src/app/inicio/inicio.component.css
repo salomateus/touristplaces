@@ -20,13 +20,6 @@
     font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
 
-.backgroundBody{
-    background-image: url(https://i.ibb.co/HpCkxLZ/04-Fondo-Blanco.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-}
-
 .backgroundCuadro{
     background-image: url(https://i.ibb.co/RcMgthY/06-cuadro.png);	
     background-size: cover;
@@ -36,6 +29,13 @@
 
 .backgroundBlue{
     background-image: url(https://i.ibb.co/xftmZb0/07-Fondo-Azul-full.png);	
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.backgroundBody{
+    background-image: url(https://i.ibb.co/HpCkxLZ/04-Fondo-Blanco.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;

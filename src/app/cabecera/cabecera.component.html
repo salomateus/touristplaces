@@ -1,6 +1,8 @@
+<!-- ****************************************** INICIO DE LA CABECERA ****************************  -->
+
 <div class="container-fluid backgroundTop"> 
 
-  <div class="container">
+  <div class="container col-11">
 
     <div class="row"> 
       <div class="col-12 d-none d-md-block borde3"> </div>
@@ -22,7 +24,7 @@
             <div class="d-flex flex-column">
                 <div class="p-2 borde3"> </div>
                 <div> 
-                  <div class="button button1">
+                  <div class="button button1" (click)="show=!show">
                     INICIO
                   </div>
                   <div class="button button1">
@@ -47,3 +49,7 @@
   </div>
 
 </div>
+
+<!-- ****************************************** FINAL DE LA CABECERA ****************************  -->
+
+<app-inicio *ngIf="show"> </app-inicio>
