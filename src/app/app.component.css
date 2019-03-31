@@ -15,3 +15,8 @@
     src: url("font/CalistoMTFett.ttf");
 }
 
+@font-face{
+    font-family: BerlinS;
+    src: url("font/BerlinSansFBDemiBold.ttf");
+}
+

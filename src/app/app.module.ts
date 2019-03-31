@@ -12,7 +12,7 @@ import { PerfilComponent } from './perfil/perfil.component';
     AppComponent,
     CabeceraComponent,
     InicioComponent,
-    PerfilComponent
+    PerfilComponent,
   ],
   imports: [
     BrowserModule,

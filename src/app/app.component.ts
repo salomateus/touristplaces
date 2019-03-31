@@ -9,4 +9,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'TouristPlaces';
   show:boolean = true;
+  Home:number = 1;
+  profile:number = 0;
 }

@@ -24,7 +24,7 @@
             <div class="d-flex flex-column">
                 <div class="p-2 borde3"> </div>
                 <div> 
-                  <div class="button button1" (click)="show=!show">
+                  <div class="button button1" (click)="home=1" (click)="profile=0">
                     INICIO
                   </div>
                   <div class="button button1">
@@ -36,7 +36,7 @@
                   <div class="button button1">
                     AYUDA
                   </div>
-                  <div class="button button1">
+                  <div class="button button1" (click)="home=0" (click)="profile=1">
                    PERFIL
                   </div>
                                    
@@ -52,4 +52,5 @@
 
 <!-- ****************************************** FINAL DE LA CABECERA ****************************  -->
 
-<app-inicio *ngIf="show"> </app-inicio>
+<app-inicio *ngIf="home"> </app-inicio>
+<app-perfil *ngIf="profile"> </app-perfil>
