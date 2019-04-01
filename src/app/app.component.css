@@ -19,4 +19,9 @@
     font-family: BerlinS;
     src: url("font/BerlinSansFBDemiBold.ttf");
 }
+@font-face{
+ font-family: Haettenschweiler;
+ src:  url("font/Haettenschweiler.ttf")
+
+}
 
