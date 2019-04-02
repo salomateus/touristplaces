@@ -1,55 +1,81 @@
 .backgroundBlue{
+   
     background-image: url(https://i.ibb.co/xftmZb0/07-Fondo-Azul-full.png);	
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
     margin-bottom: 0%;
     padding-bottom: 0;
+
+    width:100%;
 }
 
 .backgroundBody{
+    
     background-image: url(https://i.ibb.co/HpCkxLZ/04-Fondo-Blanco.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
-    padding-right: 70px;
-    padding-left: 70px;
+    padding-right: 97px;
+    padding-left: 97px;
+    width:100%;
 }
 .backgroundOption{
+    
     background-color: #345C53;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
     margin-top: 62px;
-    margin-right: 202px ;
-    margin-left: 214px;
+    margin-right: 400px ;
+    margin-left: 52px;
+    margin-bottom: -20px;
+    width:94%;
 }
 .backgroundContactos{
     background-color:#2B2C2C;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+     -webkit-border-radius: 10px 10px 10px 10px;
+     border: 0px solid #000000;
     margin-top: 0px;
-    margin-left: 61px;
-    margin-right: 61px;
+    margin-left: 89px;
+    margin-right: 112px;
+    width:76%;
 }
+.backgroundContactos2{
+    background-color:#2B2C2C;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin-top: 77px;
+    margin-left: 52px;
+    width: 600px;
+    height: 400px;
+    width: 100%;
+}
+
 .backgroundContactos1{
     background-position: top;
     margin-top: 38px;
-    margin-left: 123px;
+    margin-left: 52px;
     margin-bottom: 52px;
-    margin-right: 123px;
+    margin-right: 52px;
+    width:100%;
 }
 .backgroundvideo
   {
-    margin-top:  31px;
-background-image: url(https://i.ibb.co/xftmZb0/07-Fondo-Azul-full.png);
-width: 659px;
-height: 470px;
-background-size: cover;
-background-repeat: no-repeat;
-background-position: top;
-margin-bottom: 52px;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+
+
 }
 .bordeLineas{
     border: 8px solid #2C2B2B;
@@ -65,21 +91,26 @@ margin-bottom: 52px;
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
-    margin-bottom: 52px;
+    margin-bottom: 47px;
+    width: 100%;
 }
 .row3{
 
     display: flex;
      flex-direction: row;
      margin-top: 51px;
-    margin-right: -15px;
+    margin-right: 0px;
     margin-left: 24px;
     margin-bottom: 52px;
+  
 }
 .row2{
     display: flex;
-    margin-left:  62px;
+    justify-content: center;
+    margin-left:  52px;
+    margin-right:  52px;
     margin-top:  31px;
+    width:100%;
 }
 .row4{
 
@@ -88,14 +119,16 @@ margin-bottom: 52px;
     margin-right: -15px;
     margin-left: 46px;
     margin-bottom: 52px;
+
 }
 .row5{
 
     display: flex;
-     flex-direction: row;
+ flex-direction: row;
     margin-right: -15px;
     margin-left: 24px;
     margin-bottom: 28px;
+ 
 }
 .bordeblue{
   margin-top: 5%;
@@ -109,6 +142,7 @@ margin-bottom: 52px;
     line-height: 1em;
     font-family: Haettenschweiler;
     text-shadow: 2px 2px 4px black;
+  
 }
 .FontC2{
     margin-top: 20px;
@@ -151,7 +185,10 @@ margin-bottom: 52px;
 }
 
 .Vertical{
+   
+    height: auto;
     display:flex;
+    justify-content: left;
     flex-direction:column;
 }
 .PiePag{

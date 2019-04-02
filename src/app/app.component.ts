@@ -11,4 +11,5 @@ export class AppComponent {
   show:boolean = true;
   Home:number = 1;
   profile:number = 0;
+  ayuda:number = 0;
 }
