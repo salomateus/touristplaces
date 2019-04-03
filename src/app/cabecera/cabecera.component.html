@@ -11,7 +11,7 @@
     <div class="row "> 
         <div class="col-xl-9 col-lg-8 col-md-7 col-1 d-none d-md-block"> </div>
         <div class="col-xl-2 col-lg-2 col-md-3 col-1 d-none d-md-block"> 
-          <div><button class="butlogin"> INICIAR SESIÓN </button></div>
+          <div><button class="butlogin" (click)="show=!show" type="button" data-toggle="modal" data-target="#myModal"> INICIAR SESIÓN </button></div>
           <div class="FontUser"> ¿No tienes usuario?<br> Registrate  </div>
         </div>
         <div class="col-xl-1 col-1 d-none d-md-block"> <img width="65px" class="mx-auto d-block" src="https://i.ibb.co/6bDb5SY/02-Perfil-Usuario.png"> </div>
@@ -50,7 +50,8 @@
 </div>
 
 <!-- ****************************************** FINAL DE LA CABECERA ****************************  -->
-
+<app-iniciar-sesion *ngIf="show"></app-iniciar-sesion>
 <app-inicio *ngIf="home"> </app-inicio>
 <app-perfil *ngIf="profile"> </app-perfil>
 <app-ayuda *ngIf="ayuda"></app-ayuda>
+

@@ -7,6 +7,7 @@ import { CabeceraComponent } from './cabecera/cabecera.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { AyudaComponent } from './ayuda/ayuda.component';
+import { IniciarSesionComponent } from './iniciar-sesion/iniciar-sesion.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { AyudaComponent } from './ayuda/ayuda.component';
     InicioComponent,
     PerfilComponent,
     AyudaComponent,
+    IniciarSesionComponent,
   ],
   imports: [
     BrowserModule,
