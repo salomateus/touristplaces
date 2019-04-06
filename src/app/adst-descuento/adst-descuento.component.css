@@ -1,0 +1,78 @@
+.borde3{
+    float: right;
+    margin-top: 52px;
+}
+
+.backgroundBlue{
+    background-image: url(https://i.ibb.co/xftmZb0/07-Fondo-Azul-full.png);	
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+   
+}
+
+.backgroundBody{
+    background-image: url(https://i.ibb.co/HpCkxLZ/04-Fondo-Blanco.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+
+.FontC3{
+    text-align-last: right;
+    padding-top: 5px;
+    color: rgb(102,102,102);
+    font-size: 18px;
+    font-size-adjust: auto;
+    font-family: BERNHC;
+    
+}
+
+.PiePag{
+    background-color: rgb(43,44,44);
+    height: 40px;
+    text-align: center;
+}
+
+.backgroundA{
+    padding-left: 5%; 
+    padding-right: 5%; 
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: rgb(39, 163, 122);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    -webkit-box-shadow: 8px 7px 20px -3px rgba(0,0,0,1);
+    -moz-box-shadow: 8px 7px 20px -3px rgba(0,0,0,1);
+    box-shadow: 8px 7px 20px -3px rgba(0,0,0,1);
+}
+
+.Font{
+    font-family: BRITANIC;
+    font-size: 1.5em;
+    line-height: 30px;
+}
+
+.Font2{
+    font-family: BRITANIC;
+    font-size: 1.5em;
+    line-height: 30px;
+    color: white;
+}
+
+.form-control{
+    height: 75%;
+}
+
+.btn-dark{
+    background-color: rgb(22, 22, 22);
+    width: 100%;
+    height: auto;
+    font-size: auto;
+    border-radius: 22px 22px 22px 22px;
+    -moz-border-radius: 22px 22px 22px 22px;
+    -webkit-border-radius: 22px 22px 22px 22px;
+    border: 0px solid #000000;
+}

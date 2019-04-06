@@ -12,4 +12,5 @@ export class AppComponent {
   Home:number = 1;
   profile:number = 0;
   ayuda:number = 0;
+  descuento:number = 0;
 }

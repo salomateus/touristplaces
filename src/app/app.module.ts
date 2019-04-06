@@ -9,6 +9,7 @@ import { PerfilComponent } from './perfil/perfil.component';
 import { AyudaComponent } from './ayuda/ayuda.component';
 import { IniciarSesionComponent } from './iniciar-sesion/iniciar-sesion.component';
 import { RegistrarseComponent } from './registrarse/registrarse.component';
+import { AdstDescuentoComponent } from './adst-descuento/adst-descuento.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { RegistrarseComponent } from './registrarse/registrarse.component';
     AyudaComponent,
     IniciarSesionComponent,
     RegistrarseComponent,
+    AdstDescuentoComponent,
   ],
   imports: [
     BrowserModule,

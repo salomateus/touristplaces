@@ -24,19 +24,19 @@
             <div class="d-flex flex-column">
                 <div class="p-2 borde3"> </div>
                 <div> 
-                  <div class="button button1" (click)="home=1" (click)="profile=0" (click)="ayuda=0">
+                  <div class="button button1" (click)="home=1" (click)="profile=0" (click)="ayuda=0" (click)="descuento=0">
                     INICIO
                   </div>
                   <div class="button button1">
                     TURISMO
                   </div>
-                  <div class="button button1">
+                  <div class="button button1" (click)="ayuda=0" (click)="home=0" (click)="profile=0" (click)="descuento=1">
                      DESCUENTOS 
                   </div>
-                  <div class="button button1" (click)="ayuda=1" (click)="home=0" (click)="profile=0">
+                  <div class="button button1" (click)="ayuda=1" (click)="home=0" (click)="profile=0" (click)="descuento=0">
                     AYUDA
                   </div>
-                  <div class="button button1" (click)="home=0" (click)="profile=1" (click)="ayuda=0">
+                  <div class="button button1" (click)="home=0" (click)="profile=1" (click)="ayuda=0" (click)="descuento=0">
                    PERFIL
                   </div>                 
                 </div> 
@@ -55,4 +55,5 @@
 <app-inicio *ngIf="home"> </app-inicio>
 <app-perfil *ngIf="profile"> </app-perfil>
 <app-ayuda *ngIf="ayuda"></app-ayuda>
+<app-adst-descuento *ngIf="descuento"></app-adst-descuento>
 
