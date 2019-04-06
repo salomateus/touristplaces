@@ -1,0 +1,119 @@
+.backgroundCuadro{
+    background-image: url(https://i.ibb.co/RcMgthY/06-cuadro.png);	
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    
+}
+
+.backgroundBlue{
+    background-image: url(https://i.ibb.co/xftmZb0/07-Fondo-Azul-full.png);	
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+   
+}
+
+.backgroundDarkGreen{
+background-color: #283233;
+margin-top: 2%;
+margin-left: 4%;
+margin-right: 4%;
+margin-bottom: 2%;
+padding: 5% 5% 5% 5%;
+padding-top: 2%;
+padding-bottom: 2%
+} 
+.backgroundBody{
+    background-image: url(https://i.ibb.co/HpCkxLZ/04-Fondo-Blanco.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.backgroundGreenmin{
+    width: auto;
+    height: auto;
+    align-content: flex-start;
+    background: #2F5263;
+    margin-top: 1%;
+    -webkit-box-shadow: 8px 7px 20px -3px rgba(0,0,0,1);
+    -moz-box-shadow: 8px 7px 20px -3px rgba(0,0,0,1);
+    box-shadow: 8px 7px 20px -3px rgba(0,0,0,1);
+}
+.backgroundGrayBorde{
+    background: #4B4B4B;
+    border-radius: 39px 39px 39px 39px;
+    -moz-border-radius: 39px 39px 39px 39px;
+    -webkit-border-radius: 39px 39px 39px 39px;
+    border: 4px solid #C6C6C5;
+}
+.fonta{
+color:white;
+text-align: center;
+font-size:  3em;
+margin-bottom: 3em;
+}
+
+.fontb{
+    color:#A8A7A8;
+    text-align: start;
+    font-size:  1.875em;
+    }
+    
+.fontc{
+    color:#B6D5E5;
+    text-align: start;
+    font-size:  2em;
+    }
+
+.PiePag{
+    background-color: rgb(43,44,44);
+    height: 40px;
+    text-align: center;
+}
+
+.cont{
+    align-content: flex-start;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-right: 0%;
+   
+}
+.cont2{
+    background: white;
+}
+.cont3{
+margin-top: 6%;
+display: flex;
+justify-content: center;
+height: auto;
+
+}
+.form-group{
+height: 20em;
+width: 100%;
+}
+.form-control{
+    height: 100%;
+}
+.form-control2{
+    width: 100%;
+    height: 20%;
+}
+.borde1{
+    border: #3A3939;
+    border-style: solid;
+    border-width: 6px;
+}
+.btn-danger2{
+    margin-left: 35%;
+    width:25%;
+    height: 100%;
+    align-content: center;
+    background-color:#82B7B6;
+    border: none;
+    color: #444444;
+    font-size: 36px;
+    font-family: BerlinS;
+    font-weight: bold;
+}
