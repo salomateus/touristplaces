@@ -2,7 +2,7 @@
 
 <div class="container-fluid backgroundTop"> 
 
-  <div class="container col-11">
+  <div class="container-md col-12 col-sm-12 col-md-12 col-lg-11 col-xl-11">
 
     <div class="row"> 
       <div class="col-12 d-none d-md-block borde3"> </div>
@@ -18,33 +18,67 @@
       </div>
 
       <div class="row">
-        <div class="col-12 col-md-4 col-xl-3 "> <img class="Tourist mx-auto d-block" src="https://i.ibb.co/kynjhhy/03-Tourist-Places.png"> </div>
+          <div class="col-3 col-sm-3 d-md-none d-lg-none d-xl-none">
+              <div class="dropdown">
+                <button class="dropbtn">
+                  
+                  <img  class="img-fluid" src="https://i.ibb.co/Htc37tK/12-Btn-Barra.png">
+
+                </button>
+                <div class="dropdown-content fonte1">
+                <a href="#Home" (click)="home=1" (click)="profile=0" (click)="ayuda=0" (click)="descuento=0"  (click)="actualizacion=0">INICIO</a>
+                <a href="#" >TURISMO</a>
+                <a href="#"(click)="home=0" (click)="profile=0" (click)="ayuda=0" (click)="descuento=1"  (click)="actualizacion=0">DESCUENTOS</a>
+                <a href="#" (click)="home=0" (click)="profile=0" (click)="ayuda=1" (click)="descuento=0"  (click)="actualizacion=0">AYUDA</a>
+                <a href="#" (click)="home=0" (click)="profile=1" (click)="ayuda=0" (click)="descuento=0"  (click)="actualizacion=0">PERFIL</a>
+                </div>
+              </div>
+          </div>
+        <div class="col-6 col-sm-6 col-md-4 col-xl-3 align-items-center"> <img  class="Tourist img-fluid mx-auto" src="https://i.ibb.co/kynjhhy/03-Tourist-Places.png"> </div>
+
+        <div class="col-3 col-sm-3 d-md-none d-lg-none d-xl-none">
+
+          <div class="container h-100">
+      <div class="d-flex justify-content-center h-100">
+        <div class="searchbar">
+          <input class="search_input" type="text" name="" placeholder="Search...">
+          <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+        </div>
+      </div>
+    </div>
+
+          
+
+        </div>
+
+
         <div class="col-xl-2 col-lg-1 col-md-1 d-none d-lg-block ">  </div>
         <div class="col-xl-7 col-lg-7 col-md-8 col-1 d-none d-md-block "> 
             <div class="d-flex flex-column">
                 <div class="p-2 borde3"> </div>
+                
+                <div>
+                    <div class="button button1"  (click)="home=0" (click)="profile=1" (click)="ayuda=0" (click)="descuento=0"  (click)="actualizacion=0">
+                        PERFIL
+                       </div>   
+                    <div class="button button1"  (click)="home=0" (click)="profile=0" (click)="ayuda=1" (click)="descuento=0"  (click)="actualizacion=0">
+                        AYUDA
+                      </div>
+                    <div class="button button1"  (click)="home=0" (click)="profile=0" (click)="ayuda=0" (click)="descuento=1"  (click)="actualizacion=0">
+                        DESCUENTOS 
+                     </div>
+                    <div class="button button1">
+                        TURISMO
+                      </div>
+                  <div class="button button1" (click)="home=1" (click)="profile=0" (click)="ayuda=0" (click)="descuento=0"  (click)="actualizacion=0">
+                    INICIO
+                  </div>                 
+                </div> 
                 <div class="buttonOculto">
-                    <div  class="button button1 "  width="38%"(click)="turismo=0" (click)="home=0" (click)="profile=0" (click)="ayuda=0" (click)="descuento=0"  (click)="actualizacion=1">
+                    <div  class="button button1" style="width:50%"  (click)="home=0" (click)="profile=0" (click)="ayuda=0" (click)="descuento=0"  (click)="actualizacion=1">
                         SOLICITAR ACTUALIZACIÓN
                      </div>  
                  </div>
-                <div> 
-                  <div class="button button1" (click)="turismo=0" (click)="home=1" (click)="profile=0" (click)="ayuda=0" (click)="descuento=0"  (click)="actualizacion=0">
-                    INICIO
-                  </div>
-                  <div class="button button1" (click)="turismo=1" (click)="home=0" (click)="profile=0" (click)="ayuda=0" (click)="descuento=0"  (click)="actualizacion=0">
-                    TURISMO
-                  </div>
-                  <div class="button button1"  (click)="turismo=0" (click)="home=0" (click)="profile=0" (click)="ayuda=0" (click)="descuento=1"  (click)="actualizacion=0">
-                     DESCUENTOS 
-                  </div>
-                  <div class="button button1"  (click)="turismo=0" (click)="home=0" (click)="profile=0" (click)="ayuda=1" (click)="descuento=1"  (click)="actualizacion=0">
-                    AYUDA
-                  </div>
-                  <div class="button button1"  (click)="turismo=0" (click)="home=0" (click)="profile=1" (click)="ayuda=0" (click)="descuento=0"  (click)="actualizacion=0">
-                   PERFIL
-                  </div>               
-                </div> 
               </div>
         </div>
 
@@ -62,5 +96,5 @@
 <app-ayuda *ngIf="ayuda"></app-ayuda>
 <app-adst-descuento *ngIf="descuento"></app-adst-descuento>
 <app-actualizacion-d *ngIf="actualizacion"></app-actualizacion-d>
-<app-turismo *ngIf="turismo"> </app-turismo>
+<app-descuentos *ngIf="show"></app-descuentos>
 
