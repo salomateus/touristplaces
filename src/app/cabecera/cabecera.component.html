@@ -24,24 +24,24 @@
             <div class="d-flex flex-column">
                 <div class="p-2 borde3"> </div>
                 <div class="buttonOculto">
-                    <div  class="button button1 "  width="38%"(click)="home=0" (click)="profile=0" (click)="ayuda=0" (click)="descuento=0"  (click)="actualizacion=1">
+                    <div  class="button button1 "  width="38%"(click)="turismo=0" (click)="home=0" (click)="profile=0" (click)="ayuda=0" (click)="descuento=0"  (click)="actualizacion=1">
                         SOLICITAR ACTUALIZACIÓN
                      </div>  
                  </div>
                 <div> 
-                  <div class="button button1" (click)="home=1" (click)="profile=0" (click)="ayuda=0" (click)="descuento=0"  (click)="actualizacion=0">
+                  <div class="button button1" (click)="turismo=0" (click)="home=1" (click)="profile=0" (click)="ayuda=0" (click)="descuento=0"  (click)="actualizacion=0">
                     INICIO
                   </div>
-                  <div class="button button1">
+                  <div class="button button1" (click)="turismo=1" (click)="home=0" (click)="profile=0" (click)="ayuda=0" (click)="descuento=0"  (click)="actualizacion=0">
                     TURISMO
                   </div>
-                  <div class="button button1"  (click)="home=0" (click)="profile=0" (click)="ayuda=0" (click)="descuento=1"  (click)="actualizacion=0">
+                  <div class="button button1"  (click)="turismo=0" (click)="home=0" (click)="profile=0" (click)="ayuda=0" (click)="descuento=1"  (click)="actualizacion=0">
                      DESCUENTOS 
                   </div>
-                  <div class="button button1"  (click)="home=0" (click)="profile=0" (click)="ayuda=1" (click)="descuento=0"  (click)="actualizacion=0">
+                  <div class="button button1"  (click)="turismo=0" (click)="home=0" (click)="profile=0" (click)="ayuda=1" (click)="descuento=1"  (click)="actualizacion=0">
                     AYUDA
                   </div>
-                  <div class="button button1"  (click)="home=0" (click)="profile=1" (click)="ayuda=0" (click)="descuento=0"  (click)="actualizacion=0">
+                  <div class="button button1"  (click)="turismo=0" (click)="home=0" (click)="profile=1" (click)="ayuda=0" (click)="descuento=0"  (click)="actualizacion=0">
                    PERFIL
                   </div>               
                 </div> 
@@ -62,5 +62,5 @@
 <app-ayuda *ngIf="ayuda"></app-ayuda>
 <app-adst-descuento *ngIf="descuento"></app-adst-descuento>
 <app-actualizacion-d *ngIf="actualizacion"></app-actualizacion-d>
-<app-turismo > </app-turismo>
+<app-turismo *ngIf="turismo"> </app-turismo>
 
