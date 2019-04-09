@@ -11,6 +11,7 @@ import { IniciarSesionComponent } from './iniciar-sesion/iniciar-sesion.componen
 import { RegistrarseComponent } from './registrarse/registrarse.component';
 import { AdstDescuentoComponent } from './adst-descuento/adst-descuento.component';
 import { ActualizacionDComponent } from './actualizacion-d/actualizacion-d.component';
+import { TurismoComponent } from './turismo/turismo.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ActualizacionDComponent } from './actualizacion-d/actualizacion-d.compo
     RegistrarseComponent,
     AdstDescuentoComponent,
     ActualizacionDComponent,
+    TurismoComponent,
   ],
   imports: [
     BrowserModule,
