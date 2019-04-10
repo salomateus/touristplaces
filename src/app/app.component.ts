@@ -15,5 +15,6 @@ export class AppComponent {
   descuento:number = 0;
   actualizacion:number=0;
   turismo:number=0;
+  solicitud:number=0;
 
 }

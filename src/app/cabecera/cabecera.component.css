@@ -108,7 +108,7 @@ margin-bottom: -10%;
   }
   
   .dropdown-content {
-    display: none;
+    display: flex;
     position: absolute;
     background-color: rgba(45, 45, 45, 0.7);
     min-width: 160px;
