@@ -56,9 +56,9 @@ margin-bottom: 2%;
     padding: 2% 2% 2% 2%;
     margin: 2% 2% 2% 2%;
     background: #66AAAB;
-    border-radius: 118px 118px 118px 118px;
-    -webkit-border-radius: 118px 118px 118px 118px;
-    border: 0px solid #000000;
+    -webkit-box-shadow: 11px 13px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 11px 13px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 11px 13px 10px 0px rgba(0,0,0,0.75);
 }
 .backgroundWhite{
  padding: 0% 5% 2% 5%;
@@ -68,6 +68,13 @@ border-radius: 45px 10px 10px 45px;
 -webkit-border-radius: 45px 10px 10px 45px;
 border: 0px solid #000000;
 }
+.backgroundWhite1{
+    padding: 3% 1% 3% 2%;
+   background-color: rgba(255, 255, 255, 0.70);
+  
+   
+   }
+
 .backgroundA{
     padding-bottom: 4%;
 

@@ -1,0 +1,74 @@
+.backgroundCuadro{
+    background-image: url(https://i.ibb.co/RcMgthY/06-cuadro.png);	
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    
+}
+
+.backgroundBlue{
+    background-image: url(https://i.ibb.co/xftmZb0/07-Fondo-Azul-full.png);	
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+   
+}
+.backgroundBody{
+    background-image: url(https://i.ibb.co/HpCkxLZ/04-Fondo-Blanco.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.backgroundDarkGreen{
+background-color: #344548;
+margin-top: 2%;
+margin-left: 2%;
+margin-right: 2%;
+margin-bottom: 2%;
+} 
+.backgroundDark{
+    background-color: #151414;
+    padding: 2% 5% 2% 5%;
+}
+.backgroundWhite{
+    margin-bottom: 2%;
+    background-color: #c3c3c2;
+    border-radius: 31px 31px 31px 31px;
+    -moz-border-radius: 31px 31px 31px 31px;
+    -webkit-border-radius: 31px 31px 31px 31px;
+    border: 0px solid #000000;
+}
+.PiePag{
+    background-color: rgb(43,44,44);
+    height: 40px;
+    text-align: center;
+}
+.fonta{
+    color:#504f4f;
+    font-size: 3em;
+   margin-bottom: 4%;
+}
+
+.fontb{
+    font-size: 3em;
+    color: white;
+    text-align: center;
+}
+
+.fontc{
+    padding: 3% 3% 3% 3%;
+    color:#504f4f;
+    font-size: 1.5em;
+   margin-bottom: 4%;
+}
+.fontd{
+    color: white;
+    font-size: 1.5em;
+}
+.form-group{
+    padding-top: 12%;
+    text-align: center;
+}
+.backgroundDarkC{
+    background-color: #302f30;
+}

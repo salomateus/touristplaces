@@ -12,6 +12,8 @@ import { RegistrarseComponent } from './registrarse/registrarse.component';
 import { AdstDescuentoComponent } from './adst-descuento/adst-descuento.component';
 import { ActualizacionDComponent } from './actualizacion-d/actualizacion-d.component';
 import { DescuentosComponent } from './descuentos/descuentos.component';
+import { TurismoComponent } from './turismo/turismo.component';
+import { SolicitudComponent } from './solicitud/solicitud.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { DescuentosComponent } from './descuentos/descuentos.component';
     AdstDescuentoComponent,
     ActualizacionDComponent,
     DescuentosComponent,
+    TurismoComponent,
+    SolicitudComponent,
   ],
   imports: [
     BrowserModule,

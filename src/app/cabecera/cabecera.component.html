@@ -26,11 +26,11 @@
 
                 </button>
                 <div class="dropdown-content fonte1">
-                <a href="#Home" (click)="home=1" (click)="profile=0" (click)="ayuda=0" (click)="descuento=0"  (click)="actualizacion=0">INICIO</a>
-                <a href="#" >TURISMO</a>
-                <a href="#"(click)="home=0" (click)="profile=0" (click)="ayuda=0" (click)="descuento=1"  (click)="actualizacion=0">DESCUENTOS</a>
-                <a href="#" (click)="home=0" (click)="profile=0" (click)="ayuda=1" (click)="descuento=0"  (click)="actualizacion=0">AYUDA</a>
-                <a href="#" (click)="home=0" (click)="profile=1" (click)="ayuda=0" (click)="descuento=0"  (click)="actualizacion=0">PERFIL</a>
+                <a href="#Home" (click)="home=1" (click)="profile=0" (click)="ayuda=0" (click)="descuento=0"  (click)="actualizacion=0" (click)="turismo=0">INICIO</a>
+                <a href="#Turismo" (click)="home=0" (click)="profile=0" (click)="ayuda=0" (click)="descuento=0"  (click)="actualizacion=0" (click)="turismo=1">TURISMO</a>
+                <a href="#Descuentos "(click)="home=0" (click)="profile=0" (click)="ayuda=0" (click)="descuento=1"  (click)="actualizacion=0" (click)="turismo=0">DESCUENTOS</a>
+                <a href="#Ayuda" (click)="home=0" (click)="profile=0" (click)="ayuda=1" (click)="descuento=0"  (click)="actualizacion=0" (click)="turismo=0">AYUDA</a>
+                <a href="#Perfil" (click)="home=0" (click)="profile=1" (click)="ayuda=0" (click)="descuento=0"  (click)="actualizacion=0" (click)="turismo=0">PERFIL</a>
                 </div>
               </div>
           </div>
@@ -58,24 +58,24 @@
                 <div class="p-2 borde3"> </div>
                 
                 <div>
-                    <div class="button button1"  (click)="home=0" (click)="profile=1" (click)="ayuda=0" (click)="descuento=0"  (click)="actualizacion=0">
+                    <div class="button button1"  (click)="home=0" (click)="profile=1" (click)="ayuda=0" (click)="descuento=0"  (click)="actualizacion=0" (click)="turismo=0"> 
                         PERFIL
                        </div>   
-                    <div class="button button1"  (click)="home=0" (click)="profile=0" (click)="ayuda=1" (click)="descuento=0"  (click)="actualizacion=0">
+                    <div class="button button1"  (click)="home=0" (click)="profile=0" (click)="ayuda=1" (click)="descuento=0"  (click)="actualizacion=0" (click)="turismo=0">
                         AYUDA
                       </div>
-                    <div class="button button1"  (click)="home=0" (click)="profile=0" (click)="ayuda=0" (click)="descuento=1"  (click)="actualizacion=0">
+                    <div class="button button1"  (click)="home=0" (click)="profile=0" (click)="ayuda=0" (click)="descuento=1"  (click)="actualizacion=0" (click)="turismo=0" >
                         DESCUENTOS 
                      </div>
-                    <div class="button button1">
+                    <div class="button button1"  (click)="home=0" (click)="profile=0" (click)="ayuda=0" (click)="descuento=0"  (click)="actualizacion=0" (click)="turismo=1">
                         TURISMO
                       </div>
-                  <div class="button button1" (click)="home=1" (click)="profile=0" (click)="ayuda=0" (click)="descuento=0"  (click)="actualizacion=0">
+                  <div class="button button1" (click)="home=1" (click)="profile=0" (click)="ayuda=0" (click)="descuento=0"  (click)="actualizacion=0" (click)="turismo=0" >
                     INICIO
                   </div>                 
                 </div> 
                 <div class="buttonOculto">
-                    <div  class="button button1" style="width:50%"  (click)="home=0" (click)="profile=0" (click)="ayuda=0" (click)="descuento=0"  (click)="actualizacion=1">
+                    <div  class="button button1" style="width:50%"  (click)="home=0" (click)="profile=0" (click)="ayuda=0" (click)="descuento=0"  (click)="actualizacion=1" (click)="turismo=0">
                         SOLICITAR ACTUALIZACIÓN
                      </div>  
                  </div>
@@ -97,4 +97,6 @@
 <app-adst-descuento *ngIf="descuento"></app-adst-descuento>
 <app-actualizacion-d *ngIf="actualizacion"></app-actualizacion-d>
 <app-descuentos *ngIf="show"></app-descuentos>
+<app-turismo *ngIf="turismo" > </app-turismo>
+<app-solicitud> </app-solicitud>
 
