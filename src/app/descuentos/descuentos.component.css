@@ -17,22 +17,6 @@
     margin-top: 52px;
 }
 
-.FontC3{
-    text-align-last: right;
-    padding-top: 5px;
-    color: rgb(102,102,102);
-    font-size: 18px;
-    font-size-adjust: auto;
-    font-family: BERNHC;
-    
-}
-
-.PiePag{
-    background-color: rgb(43,44,44);
-    height: 40px;
-    text-align: center;
-}
-
 .backc1{
     background-color: rgb(40,55,59,0.7);
     background-size: cover;

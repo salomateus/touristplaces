@@ -156,15 +156,6 @@
 
 
 }
-.FontC3{
-    text-align-last: right;
-    padding-top: 5px;
-    color: rgb(102,102,102);
-    font-size: 18px;
-    font-size-adjust: auto;
-    font-family: BERNHC;
-    
-}
 .FontC4{
     margin-top: 20px;
     text-align: left;
@@ -190,10 +181,4 @@
     display:flex;
     justify-content: left;
     flex-direction:column;
-}
-.PiePag{
-    background-color: rgb(43,44,44);
-    height: 40px;
-    text-align: center;
-    margin-top: 0px;
 }

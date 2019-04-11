@@ -14,6 +14,7 @@ import { ActualizacionDComponent } from './actualizacion-d/actualizacion-d.compo
 import { DescuentosComponent } from './descuentos/descuentos.component';
 import { TurismoComponent } from './turismo/turismo.component';
 import { SolicitudComponent } from './solicitud/solicitud.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { SolicitudComponent } from './solicitud/solicitud.component';
     DescuentosComponent,
     TurismoComponent,
     SolicitudComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
