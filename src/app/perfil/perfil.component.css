@@ -15,14 +15,14 @@
 .backgroundG{
     
     margin-top:50px;
-    height: 100vh;
+    height: auto;
     padding-top: 100px; 
     padding-bottom: 100px;
     background-color: rgba(36,60,52,0.65);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top;
-    -moz-border-radius: 20px 20px 20px 20px;
+    border-radius: 20px 20px 20px 20px;
     -webkit-border-radius: 20px 20px 20px 20px;
     border: 0px solid #000000;
 }
@@ -46,8 +46,6 @@
 
 .FontDatos{
     font-family: BerlinS;
-    text-align: left;
-    box-align: center;
     font-size: 25px;
     color: rgb(48, 59, 34) ;
     font-display: none;
@@ -118,4 +116,14 @@
     padding: 0rem;
     margin: 0px;
 
+}
+
+.centrar{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.form-inline{
+    width: 100%;
+    height: auto;
 }
