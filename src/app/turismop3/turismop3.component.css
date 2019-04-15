@@ -128,9 +128,11 @@ background-color: #2E3342;
     font-size: 2,75em;
 }
 .FontC3{
+    text-align-last: right;
     padding-top: 5px;
-    color: rgba(228, 228, 228, 0.856);
-    font-size:1.5em;
+    color: rgb(102,102,102);
+    font-size: 18px;
+    font-size-adjust: auto;
     font-family: BERNHC;
 }
 .h2{

@@ -15,6 +15,9 @@ import { DescuentosComponent } from './descuentos/descuentos.component';
 import { TurismoComponent } from './turismo/turismo.component';
 import { SolicitudComponent } from './solicitud/solicitud.component';
 import { FooterComponent } from './footer/footer.component';
+import { Turismop1Component } from './turismop1/turismop1.component';
+import { Turismop2Component } from './turismop2/turismop2.component';
+import { Turismop3Component } from './turismop3/turismop3.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +34,9 @@ import { FooterComponent } from './footer/footer.component';
     TurismoComponent,
     SolicitudComponent,
     FooterComponent,
+    Turismop1Component,
+    Turismop2Component,
+    Turismop3Component,
   ],
   imports: [
     BrowserModule,

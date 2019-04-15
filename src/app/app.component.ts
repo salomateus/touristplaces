@@ -16,5 +16,7 @@ export class AppComponent {
   actualizacion:number=0;
   turismo:number=0;
   solicitud:number=0;
-
+  turismop1:number=0;
+  turismop2:number=0;
+  turismop3:number=0;
 }
