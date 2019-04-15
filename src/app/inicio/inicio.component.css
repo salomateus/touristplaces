@@ -54,6 +54,55 @@
     font-family: Eras;
     text-shadow: 2px 2px 4px black;
 }
+
+
+
+@media screen and (min-width: 1800px) {
+    .FontC1 {
+      font-size: 38px;
+      line-height: 55px;
+    }
+  }
+
+@media screen and (max-width: 1800px) {
+    .FontC1 {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+
+@media screen and (max-width: 1500px) {
+    .FontC1 {
+      font-size: 28px;
+      line-height: 35px;
+    }
+  }
+
+@media screen and (max-width: 1199px) {
+    .FontC1 {
+      font-size: 22px;
+      line-height: 25px;
+    }
+  }
+
+@media screen and (max-width: 991px) {
+    .FontC1 {
+      font-size: 19px;
+    }
+  }
+
+@media screen and (max-width: 767px) {
+    .FontC1 {
+      font-size: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 575px) {
+    .FontC1 {
+      font-size: 20px;
+    }
+  }
+
 .FontC2{
     text-align: center;
     color: rgb(54,54,54);
@@ -78,3 +127,48 @@
     background-color: rgb(43,44,44);
     text-align: center;
 }
+
+@media screen and (min-width: 1800px) {
+    .FontC2 {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+
+@media screen and (max-width: 1800px) {
+    .FontC2 {
+      font-size: 28px;
+      line-height: 30px;
+    }
+  }
+
+@media screen and (max-width: 1500px) {
+    .FontC2 {
+      font-size: 26px;
+      line-height: 25px;
+    }
+  }
+
+@media screen and (max-width: 1199px) {
+    .FontC2 {
+      font-size: 24px;
+    }
+  }
+
+@media screen and (max-width: 991px) {
+    .FontC2 {
+      font-size: 22px;
+    }
+  }
+
+@media screen and (max-width: 767px) {
+    .FontC2 {
+      font-size: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 575px) {
+    .FontC2 {
+      font-size: 18px;
+    }
+  }

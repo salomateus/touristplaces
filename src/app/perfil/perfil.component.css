@@ -127,3 +127,20 @@
     width: 100%;
     height: auto;
 }
+
+.centrar{
+    display: flexbox;
+    justify-content: center;
+}
+
+.cimg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cblk{
+    direction: flex;
+    justify-content: center;
+}
+

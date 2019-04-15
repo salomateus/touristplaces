@@ -40,6 +40,7 @@
     background-position: top;
     margin-top: 2%;
     margin-bottom: 2%;
+    cursor: pointer;
 }
 
 .backc4{
@@ -63,6 +64,7 @@
     background-position: top;
     margin: 3%;
     padding: 10px;
+    cursor: pointer;
 }
 
 .backc6{
@@ -111,7 +113,7 @@
     color: rgb(49,49,49);
     font-size: 1.4em;
 }
-.button{
+.button1{
     width: 100%;
     background-color: rgb(49,49,49);
     color: rgb(192,192,192);
@@ -129,4 +131,11 @@
     -webkit-border-radius: 20px 20px 20px 20px;
     border: 0px solid #000000;
 }
+
+
+  
+  .button1:hover {
+    background-color: #555555;
+    color: white;
+  }
 
