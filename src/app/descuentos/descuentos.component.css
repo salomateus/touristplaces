@@ -139,3 +139,10 @@
     color: white;
   }
 
+  .btn-primary{
+      background-color: rgb(45,45,45,0.8);
+      font-size: 14px;
+      font-weight: bold;
+  }
+
+  
