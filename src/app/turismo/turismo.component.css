@@ -23,17 +23,17 @@ margin-bottom: 2%;
 
 } 
 .backgroundBody{
-    margin-top: 3%;
-    background-image: url(https://i.ibb.co/HpCkxLZ/04-Fondo-Blanco.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
+  margin-top:3%;
+  background-image: url(https://i.ibb.co/HpCkxLZ/04-Fondo-Blanco.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
 }
 .backgroundGreenmin{
-    margin-left: 0%;
-    width: 100%;
+    
+    width:auto;
     height: 100%;
-    align-content: center;
+    align-content: flex;
     background-color: #47616c;
    
 }
@@ -71,9 +71,7 @@ border: 0px solid #000000;
 }
 .backgroundWhite1{
     padding: 3% 1% 3% 2%;
-   background-color: rgba(255, 255, 255, 0.70);
-  
-   
+   background-color: rgba(255, 255, 255, 0.70); 
    }
 
 .backgroundA{
@@ -106,17 +104,15 @@ background-color: #2E3342;
     text-decoration-color: #474748;
 }
 .button{
+    display: flex;
+    justify-content: flex-start;
+   width: auto;
     margin-top: 2%;
     border-radius: 118px 118px 118px 118px;
     -moz-border-radius: 118px 118px 118px 118px;
     -webkit-border-radius: 118px 118px 118px 118px;
     border: 0px solid #000000;
     text-decoration-color: #474748;
-}
-.PiePag{
-    background-color: rgb(43,44,44);
-    height: 40px;
-    text-align: center;
 }
 .fonta{
     font-size: 2em;
@@ -128,10 +124,9 @@ background-color: #2E3342;
     font-size: 2,75em;
 }
 .FontC3{
-    padding-top: 5px;
-    color: rgba(228, 228, 228, 0.856);
-    font-size:1.5em;
-    font-family: BERNHC;
+    font-size: 1em;
+    color: white;
+
 }
 .h2{
     color: #3B684D;
@@ -156,3 +151,86 @@ background-color: #2E3342;
     width:100%;
     position:absolute;
     }
+    @media screen and (max-width: 1800px) {
+        .fonta {
+          font-size: 30px;
+          line-height: 40px;
+        }
+      }
+    
+    @media screen and (max-width: 1500px) {
+        .fonta{
+          font-size: 28px;
+          line-height: 35px;
+        }
+      }
+    
+    @media screen and (max-width: 1199px) {
+        .fonta {
+          font-size: 22px;
+          line-height: 25px;
+        }
+      }
+    
+    @media screen and (max-width: 991px) {
+        .fonta {
+          font-size: 19px;
+        }
+      }
+    
+    @media screen and (max-width: 767px) {
+        .fonta {
+          font-size: 30px;
+        }
+      }
+      
+      @media screen and (max-width: 575px) {
+        .fonta {
+          font-size: 20px;
+        }
+      }
+    
+@media screen and (min-width: 1800px) {
+    .FontC3 {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+
+@media screen and (max-width: 1800px) {
+    .FontC3 {
+      font-size: 28px;
+      line-height: 30px;
+    }
+  }
+
+@media screen and (max-width: 1500px) {
+    .FontC3 {
+      font-size: 26px;
+      line-height: 25px;
+    }
+  }
+
+@media screen and (max-width: 1199px) {
+    .FontC3 {
+      font-size: 24px;
+    }
+  }
+
+@media screen and (max-width: 991px) {
+    .FontC3 {
+      font-size: 22px;
+    }
+  }
+
+@media screen and (max-width: 767px) {
+    .FontC3 {
+      font-size: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 575px) {
+    .FontC3 {
+      font-size: 18px;
+    }
+  }

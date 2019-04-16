@@ -122,11 +122,90 @@ background-color: #2E3342;
     font-size: 2em;
     color: white;
 }
+@media screen and (max-width: 1800px) {
+    .fonta {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+
+@media screen and (max-width: 1500px) {
+    .fonta{
+      font-size: 28px;
+      line-height: 35px;
+    }
+  }
+
+@media screen and (max-width: 1199px) {
+    .fonta {
+      font-size: 22px;
+      line-height: 25px;
+    }
+  }
+
+@media screen and (max-width: 991px) {
+    .fonta {
+      font-size: 19px;
+    }
+  }
+
+@media screen and (max-width: 767px) {
+    .fonta {
+      font-size: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 575px) {
+    .fonta {
+      font-size: 20px;
+    }
+  }
+
 .fontb{
     margin-right: 2%;
     color : #373737;
     font-size: 2,75em;
 }
+
+@media screen and (max-width: 1800px) {
+    .fontb {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+
+@media screen and (max-width: 1500px) {
+    .fontb{
+      font-size: 28px;
+      line-height: 35px;
+    }
+  }
+
+@media screen and (max-width: 1199px) {
+    .fontb {
+      font-size: 22px;
+      line-height: 25px;
+    }
+  }
+
+@media screen and (max-width: 991px) {
+    .fontb {
+      font-size: 19px;
+    }
+  }
+
+@media screen and (max-width: 767px) {
+    .fontb {
+      font-size: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 575px) {
+    .fontb {
+      font-size: 20px;
+    }
+  }
+
 .FontC3{
     text-align-last: right;
     padding-top: 5px;
@@ -139,6 +218,45 @@ background-color: #2E3342;
     color: #3B684D;
     font-size: 3em;
 }
+@media screen and (max-width: 1800px) {
+    .h2 {
+      font-size: 32px;
+      line-height: 42px;
+    }
+  }
+
+@media screen and (max-width: 1500px) {
+    .h2{
+      font-size: 30px;
+      line-height: 37px;
+    }
+  }
+
+@media screen and (max-width: 1199px) {
+    .h2 {
+      font-size: 24px;
+      line-height: 27px;
+    }
+  }
+
+@media screen and (max-width: 991px) {
+    .h2 {
+      font-size: 21px;
+    }
+  }
+
+@media screen and (max-width: 767px) {
+    .h2 {
+      font-size: 32px;
+    }
+  }
+  
+  @media screen and (max-width: 575px) {
+    .h2 {
+      font-size: 22px;
+    }
+  }
+
 .map-container-4{
     overflow:hidden;
     padding-bottom:56.25%;

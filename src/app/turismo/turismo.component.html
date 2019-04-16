@@ -1,105 +1,113 @@
 <div class="container-fluid backgroundBody">
-	   <div class="row">
-	    	<div class="col-xl-12 col-1 d-none d-md-block borde3"> </div>
-    	</div>
+	<div class="backgroundBody">
+		<div class="col-xl-12 col-lg-12 col-md-12 col-12 d-none d-md-block  borde3"> </div>
+	</div>
   
 
-     <div class="container backgroundBlue col-11">
+  <div class="container backgroundBlue col-xs-12 col-sm-12 col-md-11 col-xl-11">
 			<div class="row">
-        <div class="col-md-12 borde3"> </div>
-        <div class="col-md-12 borde3"> </div>
-     	</div>
+        <div class="col-xl-12 col-lg-12 col-md-12 col-12 d-none d-md-block borde3"> </div>
+        <div class="col-md-12 d-xs-none borde3"> </div>
+	</div>
 			
-       <div class="row">
-          <div class="col-8">
-             <div class=" backgroundDarkGreen ">
-               <div class="colum" >
-                 <div class="row backgroundGreenmin">
-                  <div class="col-10"><input class="form-control" id="myInput" type="text" placeholder="Search.."></div>
-                  <div class="col-2 button"><button type="button" class="btn btn-secondary">Buscar</button> </div>
-                 </div>
-                 <div class="row backgroundGreenmin">
-                    <div class="col-6">
-                       <p class="fonta">Sitio turisticos encontrados</p>
-                    </div>
-                    <div class="col-3" turismop1="1">
-                       <nav class="col-12">
-                          <nav aria-label="...">
-                              <ul class="pagination">
-                                <li class="page-item" (click)="turismop1=1" (click)="turismop2=0" (click)="turismop3=0"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item " (click)="turismop1=0" (click)="turismop2=1" (click)="turismop3=0">
-                                  <span class="page-link">2  <span class="sr-only">(current)</span>
-                                  </span>
-                                </li>
-                                <li class="page-item" (click)="turismop1=0" (click)="turismop2=0" (click)="turismop3=1"><a class="page-link" href="#">3</a></li>
-                              </ul>
-                            </nav>
-                       </nav>
-                    </div>
-                    <div class="col-3">
-             
-                    </div>
-                  </div>
-               </div>
-            <div>
-              <app-turismop1 *ngIf="turismop1"></app-turismop1>
-            </div>
-            <div>
-                <app-turismop2 *ngIf="turismop2"></app-turismop2>
-            </div>
-            <div>
-              <app-turismop3 *ngIf="turismop3"></app-turismop3>
-            </div>
-
-
-
-
-             </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-9 col-xl-8">
+       <div class=" col-12">
+         <div class=" colum col-12" >
+           <div class="row backgroundGreenmin">
+            <div class="col-xs-7 col-sm-10 col-md-9 col-xl-10"><input class="form-control" id="myInput" type="text" placeholder="Search.."></div>
+            <div class="col-xs-1 col-sm-2 col-md-3 col-xl-2 button"><button type="button" class="btn btn-secondary">Buscar</button> </div>
            </div>
-           <div class="col-4">
-            <div class="container-fluid backgroundBluem column ">
+           <div class="row backgroundGreenmin">
               <div class="col-6">
-                <p class="fonta">Ubicación</p>
+                 <p class="fonta">Sitio turisticos encontrados</p>
               </div>
-              <div >
-                     <div class="col-12">
-                      <div class="container-fluid m-0 p-0">
-                        <!--Google map-->
-                        <div id="map-container-google-4" class="z-depth-1-half map-container-4" style="height: 400px">
-                          <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
-                            style="border:0" allowfullscreen></iframe>
-                        </div>
-                      </div>
-                      <div class="linea">
-                      </div>
-                     </div>
+              <div class="col-6 turismop1=1">
+                 <nav class="col-12">
+                    <nav aria-label="...">
+                        <ul class="pagination">
+                          <li class="page-item" (click)="turismop1=1" (click)="turismop2=0" (click)="turismop3=0"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item " (click)="turismop1=0" (click)="turismop2=1" (click)="turismop3=0">
+                            <span class="page-link">2  <span class="sr-only">(current)</span>
+                            </span>
+                          </li>
+                          <li class="page-item" (click)="turismop1=0" (click)="turismop2=0" (click)="turismop3=1"><a class="page-link" href="#">3</a></li>
+                        </ul>
+                      </nav>
+                 </nav>
               </div>
-              <div class="col-12" >
-              <p class="fonta">
-                Resumen. 
-              </p>
+              <div class="col-3">
+       
               </div>
-              <div class="col-12">
-                <div class="backgroundA">
-                  <div class="FontC3">
-                    <p>
-                      Bogotá cuenta con varios sitios turísticos que necesitan ser más visitados y más concurridos ya que es el principal destino turístico del país y esto ayudaría positivamente en el desarrollo económico de la ciudad y en una amplia participación social. Por ello el objetivo de esta página Tourist Place Bogotá que incentive a los turistas nacionales y extranjeros a que visiten todos los lugares turísticos brindándoles suficiente información y descuentos, ya que la página será un sitio informativo de todas las promociones que cada lugar desee obsequiar.
-                    </p>
+            </div>
+         </div>
+      <div>
+        <app-turismop1 *ngIf="turismop1"></app-turismop1>
+      </div>
+      <div>
+          <app-turismop2 *ngIf="turismop2"></app-turismop2>
+      </div>
+      <div>
+        <app-turismop3 *ngIf="turismop3"></app-turismop3>
+      </div>
+
+
+
+
+       </div>
+     </div>
+     <div class="col-xs-12 col-sm-12 col-md-3 col-xl-4 ">
+      <div class="container-fluid backgroundBluem column ">
+        <div class="col-6">
+          <p class="fonta">Ubicación</p>
+        </div>
+        <div >
+               <div class="col-12">
+                <div class="container-fluid m-0 p-0">
+                  <!--Google map-->
+                  <div id="map-container-google-4" class="z-depth-1-half map-container-4" style="height: 400px">
+                    <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                      style="border:0" allowfullscreen></iframe>
                   </div>
                 </div>
-               
-              </div>
-             </div>
-
-           </div>
-           
-         </div>
+                <div class="linea">
+                </div>
+               </div>
+        </div>
+        <div class="col-12" >
+        <p class="fonta">
+          Resumen. 
+        </p>
+        </div>
+        <div class="col-12">
+          <div class="backgroundA">
+            <div class="FontC3">
+              <p>
+                Bogotá cuenta con varios sitios turísticos que necesitan ser más visitados y más concurridos ya que es el principal destino turístico del país y esto ayudaría positivamente en el desarrollo económico de la ciudad y en una amplia participación social. Por ello el objetivo de esta página Tourist Place Bogotá que incentive a los turistas nacionales y extranjeros a que visiten todos los lugares turísticos brindándoles suficiente información y descuentos, ya que la página será un sitio informativo de todas las promociones que cada lugar desee obsequiar. <br>
+                Directora :Salome Mateus<br>
+                Integrantes:<br>
+                Jaret Diaz<br>
+                Jose Florez<br>
+                
+              </p>
+            </div>
+          </div>
          
-         <app-footer></app-footer>
-  </div>
- 
+        </div>
+       </div>
 
+     </div>
+     
+   </div>
+			
+	<div class="row">
+    <div class="col-md-12 borde3"> </div>
+	</div>	
+	
+	<app-footer></app-footer>
 
+	</div>	
+</div>	
 
 
    
