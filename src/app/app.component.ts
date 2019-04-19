@@ -19,7 +19,4 @@ export class AppComponent {
   turismop1:number=0;
   turismop2:number=0;
   turismop3:number=0;
-
-  Adescuento:number=1;
-  Hdescuento:number=0;
 }
