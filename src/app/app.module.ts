@@ -18,6 +18,11 @@ import { FooterComponent } from './footer/footer.component';
 import { Turismop1Component } from './turismop1/turismop1.component';
 import { Turismop2Component } from './turismop2/turismop2.component';
 import { Turismop3Component } from './turismop3/turismop3.component';
+import { AngularFireModule } from '@angular/fire';
+import { environment } from '../environments/environment';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { AngularFireAuthModule } from '@angular/fire/auth';
 
 @NgModule({
   declarations: [
@@ -40,7 +45,11 @@ import { Turismop3Component } from './turismop3/turismop3.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule, // imports firebase/firestore, only needed for database features
+    AngularFireAuthModule, // imports firebase/auth, only needed for auth features,
+    AngularFireStorageModule // imports firebase/storage only needed for storage features
   ],
   providers: [],
   bootstrap: [AppComponent]
