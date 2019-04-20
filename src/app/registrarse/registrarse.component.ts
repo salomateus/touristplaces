@@ -15,7 +15,10 @@ export class RegistrarseComponent implements OnInit {
   }
 
   registrar(){
-    console.log("Hola Mundo")
+    var nombre = document.getElementById('nombre').nodeValue;
+    var DI = document.getElementById('DI').nodeValue;
+    var ciudad = document.getElementById('Ciudad').nodeValue;
+    var contraseña = document.getElementById('cont').nodeValue;
   }
 
 }
