@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as firebase from 'firebase';
 
 @Component({
   selector: 'app-iniciar-sesion',
@@ -12,4 +13,21 @@ export class IniciarSesionComponent implements OnInit {
   ngOnInit() {
   }
 
+  Iniciar(){
+
+    var nombre = document.getElementById('Nombre1').value;
+    var DI = document.getElementById('DI').value;
+    var ciudad = document.getElementById('Ciudad').value;
+    var contrasena = document.getElementById('Contrasena1').value;
+    var contrasena2 = document.getElementById('Cont1').value;
+
+    firebase.auth().signInWithEmailAndPassword(nombre, contrasena).catch(function(error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      console.log(errorCode);
+      console.log(errorMessage);
+      // ...
+    });
+  }
 }

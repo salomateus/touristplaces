@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import * as firebase from 'firebase';
+import { userInfo } from 'os';
 
 @Component({
   selector: 'app-registrarse',
@@ -15,10 +16,21 @@ export class RegistrarseComponent implements OnInit {
   }
 
   registrar(){
-    var nombre = document.getElementById('nombre').nodeValue;
-    var DI = document.getElementById('DI').nodeValue;
-    var ciudad = document.getElementById('Ciudad').nodeValue;
-    var contraseña = document.getElementById('cont').nodeValue;
+    var nombre = document.getElementById('Nombre').value;
+    var DI = document.getElementById('DI').value;
+    var ciudad = document.getElementById('Ciudad').value;
+    var contrasena = document.getElementById('Cont').value;
+    var contrasena2 = document.getElementById('Cont1').value;
+
+    firebase.auth().createUserWithEmailAndPassword(nombre,contrasena).catch(function(error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      console.log(errorCode);
+      console.log(errorMessage);
+      // ...
+      
+    });
   }
 
 }
