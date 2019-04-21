@@ -15,13 +15,13 @@ export class IniciarSesionComponent implements OnInit {
 
   Iniciar(){
 
-    var nombre = document.getElementById('Nombre1').value;
+    var nombre1 = document.getElementById('Nombre1').value;
     var DI = document.getElementById('DI').value;
     var ciudad = document.getElementById('Ciudad').value;
-    var contrasena = document.getElementById('Contrasena1').value;
+    var contrasena1 = document.getElementById('Contrasena1').value;
     var contrasena2 = document.getElementById('Cont1').value;
 
-    firebase.auth().signInWithEmailAndPassword(nombre, contrasena).catch(function(error) {
+    firebase.auth().signInWithEmailAndPassword(nombre1, contrasena1).catch(function(error) {
       // Handle Errors here.
       var errorCode = error.code;
       var errorMessage = error.message;
