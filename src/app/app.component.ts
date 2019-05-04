@@ -28,6 +28,7 @@ export class AppComponent {
       if (user) {
         console.log('Sesion iniciada');
         // User is signed in.
+
         CabeceraComponent.Dentro();
         var displayName = user.displayName;
         var email = user.email;

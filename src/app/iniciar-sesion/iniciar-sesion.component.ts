@@ -16,10 +16,7 @@ export class IniciarSesionComponent implements OnInit {
   Iniciar(){
 
     var nombre1 = (<HTMLInputElement>document.getElementById("Nombre1")).value; 
-    var DI = (<HTMLInputElement>document.getElementById("DI")).value; 
-    var ciudad = (<HTMLInputElement>document.getElementById("Ciudad")).value; 
     var contrasena1 = (<HTMLInputElement>document.getElementById("Contrasena1")).value; 
-    var contrasena2 = (<HTMLInputElement>document.getElementById("Cont1")).value; 
 
     firebase.auth().signInWithEmailAndPassword(nombre1, contrasena1).catch(function(error) {
       // Handle Errors here.

@@ -45,8 +45,7 @@
     transition-duration: 0.2s;
     cursor: pointer;
 }
-.buttonOculto{
-   
+.buttonOculto{   
 display :flex;
 justify-content:flex-end;
 align-content: flex-end;
@@ -155,4 +154,16 @@ margin-bottom: -10%;
     -webkit-box-shadow: -5px 5px 6px 0px rgba(46,46,46,1);
     -moz-box-shadow: -5px 5px 6px 0px rgba(46,46,46,1);
     box-shadow: -5px 5px 6px 0px rgba(46,46,46,1);
+  }
+
+  .nameuser{
+    color: rgb(244,243,244);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+  }
+
+  .iAl{
+    display: flex;
+    justify-content: right;
+    
   }
