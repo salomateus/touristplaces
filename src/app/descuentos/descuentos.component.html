@@ -9,7 +9,7 @@
       <div class="container col-xs-12 col-sm-12 col-md-11 col-xl-11">
       <div class="row">
 
-        <div id="Ades" class="col-xl-7 col-md-12 col-sm-12 col-xd-12 backc1">
+        <div class="col-xl-7 col-md-12 col-sm-12 col-xd-12 backc1">
           <div class="flex flex-column">
             <div class="col-12 font">
               ADQUIRIR DESCUENTOS
@@ -138,5 +138,67 @@
 
      
   </div>
+
+  <div class="row">
+    <div class="col-3"> </div>
+
+    <div class="col-6 backgroundA">
+       <div class="flex flex-column">
+
+        <div class="p-3">
+          <div class="row">
+            <div class="col-4"> </div>
+            <div class="col-4"> 
+            <img class="img-fluid" width="220px" src="https://i.ibb.co/v19qzjW/85646.png">
+            </div>
+            <div class="col-4"> </div>
+          </div>
+        </div>
+        <div class="p-3">
+          <div class="row">
+            <div class="col-6 Font2">
+              <label for="sel1">Seleccionar tipo de documento</label>
+            </div>
+            <div class="col-6">
+              
+                
+                <select class="form-control" id="sel1" name="sellist1">
+                  <option>Cédula de ciudadanía</option>
+                  <option>Tarjeta de identidad</option>
+                  <option>Cédula de extranjeria</option>
+                </select>
+
+            </div>
+        </div>
+        </div>
+        <div class="p-3">
+            <div class="row">
+                <div class="col-6 Font2">
+                    <label for="DI">Documento de Identificación</label>
+                </div>
+                <div class="col-6">
+                    <input type="DI" class="form-control" id="ID">
+                </div>
+            </div>
+        </div>
+
+        <div class="p-3">
+
+          <div class="row">
+            <div class="col-3"> </div>
+            <div class="col-6 Font">
+                <button (click)="info()" type="button" class="btn-dark">VERIFICAR <br> DOCUMENTO</button>
+            </div>
+            <div class="col-"> </div>
+          </div>
+
+        </div>
+        
+       </div>
+      </div>
+
+    <div class="col-3"></div>
+  </div>
+
   <app-footer></app-footer>
 </div>

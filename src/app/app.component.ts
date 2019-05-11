@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import * as firebase from 'firebase';
 import { CabeceraComponent } from './cabecera/cabecera.component';
+import { DescuentosComponent } from './descuentos/descuentos.component' 
 
 const config = {
   apiKey: "AIzaSyA9h7yXWuKwW07osly9aFGtqPtP7AIjYjY",
@@ -29,6 +30,7 @@ export class AppComponent {
         console.log('Sesion iniciada');
         // User is signed in.
 
+        DescuentosComponent.Descuentos();
         CabeceraComponent.Dentro();
         var displayName = user.displayName;
         var email = user.email;

@@ -24,6 +24,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { connectableObservableDescriptor } from 'rxjs/internal/observable/ConnectableObservable';
+import { ConexionService } from './services/conexion.service';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,7 @@ import { connectableObservableDescriptor } from 'rxjs/internal/observable/Connec
     AngularFireStorageModule // imports firebase/storage only needed for storage features
   
   ],
-  providers: [],
+  providers: [ConexionService],
   bootstrap: [AppComponent]
 })
 
