@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as firebase from 'firebase';
+import{Persona} from '../modelo/persona';
+import{PersonaService} from '../services/persona.service'
 
 @Component({
   selector: 'app-registrarse',
@@ -8,13 +10,15 @@ import * as firebase from 'firebase';
 })
 
 export class RegistrarseComponent implements OnInit {
-
-  constructor() { }
+ personaList: Persona[];
+  constructor(private personaService: PersonaService) { }
 
   ngOnInit() {
   }
-
-  registrar(){
+ 
+  registrar(personaForm: NgForm){
+    this.personaService.getPersona();
+    this.personaService. insertPersona(personaForm.value);
     var nombre = (<HTMLInputElement>document.getElementById("Nombre")).value; 
     var DI = (<HTMLInputElement>document.getElementById("DI")).value; 
     var ciudad = (<HTMLInputElement>document.getElementById("Ciudad")).value; 
