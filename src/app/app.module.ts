@@ -18,15 +18,17 @@ import { FooterComponent } from './footer/footer.component';
 import { Turismop1Component } from './turismop1/turismop1.component';
 import { Turismop2Component } from './turismop2/turismop2.component';
 import { Turismop3Component } from './turismop3/turismop3.component';
-import { AngularFireModule } from '@angular/fire';
+
+
+import { AngularFireModule } from 'angularfire2';
 import { environment } from '../environments/environment';
-import { AngularFirestoreModule } from '@angular/fire/firestore';
-import { AngularFireStorageModule } from '@angular/fire/storage';
-import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFirestoreModule, FirestoreSettingsToken } from 'angularfire2/firestore';
+import { AngularFireStorageModule } from 'angularfire2/storage';
+import { AngularFireAuthModule } from 'angularfire2/auth';
 import{ AngularFireDatabaseModule} from 'angularfire2/database';
-import{FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { connectableObservableDescriptor } from 'rxjs/internal/observable/ConnectableObservable';
-import { ConexionService } from './services/conexion.service';
+import{FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PersonaService } from './services/persona.service';
+
 
 @NgModule({
   declarations: [
@@ -50,13 +52,15 @@ import { ConexionService } from './services/conexion.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularFireModule.initializeApp(environment.firebase),FormsModule, ReactiveFormsModule,
+    AngularFireModule.initializeApp(environment.firebase, 'Tourist Places'),FormsModule, ReactiveFormsModule,
     AngularFirestoreModule, // imports firebase/firestore, only needed for database features
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features,
-    AngularFireStorageModule // imports firebase/storage only needed for storage features
+    AngularFireStorageModule, // imports firebase/storage only needed for storage features
+    AngularFireDatabaseModule,
+    FormsModule, ReactiveFormsModule
   
   ],
-  providers: [ConexionService],
+  providers: [PersonaService, {provide: FirestoreSettingsToken, useValue:{}}],
   bootstrap: [AppComponent]
 })
 

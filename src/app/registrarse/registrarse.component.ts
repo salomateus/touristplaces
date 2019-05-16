@@ -1,7 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import * as firebase from 'firebase';
-import{Persona} from '../modelo/persona';
+import{Personas} from '../modelo/personas';
 import{PersonaService} from '../services/persona.service'
+import{ NgForm } from '@angular/forms';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-registrarse',
@@ -9,31 +11,52 @@ import{PersonaService} from '../services/persona.service'
   styleUrls: ['./registrarse.component.css']
 })
 
-export class RegistrarseComponent implements OnInit {
- personaList: Persona[];
-  constructor(private personaService: PersonaService) { }
+export class RegistrarseComponent{
 
-  ngOnInit() {
+  personas: Personas = {
+    keyRegistro: '',
+    nombre: '',
+    ciudad: '',
+    num_identificacion: ''
+  };
+
+  constructor(private personaService: PersonaService) { 
+
+    this.personaService.ListaItem().subscribe(item=>{
+      var com = item;
+      var tamaño = item.length;
+      console.log(com);
+      console.log(tamaño);
+    });
+
+   
   }
  
   registrar(personaForm: NgForm){
-    this.personaService.getPersona();
-    this.personaService. insertPersona(personaForm.value);
-    var nombre = (<HTMLInputElement>document.getElementById("Nombre")).value; 
-    var DI = (<HTMLInputElement>document.getElementById("DI")).value; 
-    var ciudad = (<HTMLInputElement>document.getElementById("Ciudad")).value; 
-    var contrasena = (<HTMLInputElement>document.getElementById("Cont")).value; 
-    var contrasena2 = (<HTMLInputElement>document.getElementById("Cont1")).value; 
 
-    firebase.auth().createUserWithEmailAndPassword(nombre,contrasena).catch(function(error) {
-      // Handle Errors here.
-      var errorCode = error.code;
-      var errorMessage = error.message;
-      console.log(errorCode);
-      console.log(errorMessage);
-      // ...
+      this.personaService.InsertarPersona(this.personas);
+
+      var nombre = (<HTMLInputElement>document.getElementById("Nombre")).value; 
+      var contrasena = (<HTMLInputElement>document.getElementById("contras")).value; 
+    
+      firebase.auth().createUserWithEmailAndPassword(nombre,contrasena).catch(function(error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        console.log(errorCode);
+        console.log(errorMessage);
+        // ...
+        
+      });
+
+      Swal.fire({
+        position: 'top-end',
+        type: 'success',
+        title: 'creado con exito',
+        showConfirmButton: false, 
+        timer: 2000 
+      })
       
-    });
-  }
 
+    }
 }

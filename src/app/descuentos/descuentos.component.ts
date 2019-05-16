@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as firebase from 'firebase';
-import { ConexionService } from '../services/conexion.service';
-
+import { PersonaService } from '../services/persona.service';
 
 @Component({
   selector: 'app-descuentos',
@@ -11,14 +10,9 @@ import { ConexionService } from '../services/conexion.service';
 
 export class DescuentosComponent implements OnInit {
 
-  MusNa:any;
-
-  constructor(private conexion:ConexionService) {
-    
-   }
+  constructor(private conexion: PersonaService) { }
 
   info(){
-    
     var iden1 = (<HTMLInputElement>document.getElementById('sel1')).value;
     var iden2 = (<HTMLInputElement>document.getElementById('ID')).value;
     
@@ -27,18 +21,6 @@ export class DescuentosComponent implements OnInit {
       var tamaño = item.length;
       console.log(com);
       console.log(tamaño);
-
-      var prueba = com[0];
-      var prueba2 = iden2;
-
-      console.log(prueba2);
-      console.log(prueba);
-
-      if(prueba2 == prueba['NDI']){
-        console.log("ESTE USUARIO TIENE EL MISMO NUMERO DE DOCUMENTO");
-      }else{
-        console.log("USUARIO EQUIVOCADO");
-      }
     });
 
      /*

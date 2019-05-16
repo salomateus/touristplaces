@@ -16,47 +16,56 @@
             <div class="backgroundAM"> 
                 <div class="d-flex flex-column">
                   
-                  <form #personaForm="ngForm">
+                  <form #personaForm="ngForm" (ngSubmit)="registrar(personaForm)">
+
                     <div class="col_12 FontDatos" class="p-4 FontDatos">REGISTRARSE</div>
+
+                    <input type="hidden" name="$keyregistro" #$keyregistro="ngModel" 
+                    [(ngModel)]="personas.keyregistro">
+
                   <div class="p-2 FontDatos">
-                    <form class="form-inline"  >
-                      <div class="col-12">	<label for="nombre">NOMBRE</label> </div>
-                      <div class="col-12 centrar">	<input type="text" class="form-control" id="Nombre" placeholder="Ingresar Nombre" name="nombre" #nombre="ngModel" [(ngModel)]="personaService.selectedPersona.Nombre"> </div>
-                    </form>
+   
+                      <div class="col-12">	<label for="nombre">CORREO ELECTRÓNICO</label> </div>
+                      <div class="col-12 centrar">	<input type="text" class="form-control" id="Nombre"
+                      placeholder="Ingresar Nombre" name="Nombre"  #nombre="ngModel" [(ngModel)]="personas.nombre" > </div> 
                   </div>
+
                   <div class="p-2 FontDatos">
-                    <form class="form-inline" >
+                    
                       <div class="col-12" >	<label for="I.D">I.D</label> </div>
-                      <div class="col-12 centrar">	<input type="text" class="form-control " id="DI" placeholder="Ingresar Documento de identificación" name="cont2" #documento="ngModel" [(ngModel)]="personaService.selectedPersona.Documento"> </div>
-                    </form>
+                      <div class="col-12 centrar">	<input type="text" class="form-control " id="DI" 
+                      placeholder="Ingresar Documento de identificación" name="cont2" #num_identificacion="ngModel" [(ngModel)]="personas.num_identificacion"> </div>
+                   
                   </div>
                   <div class="p-2 FontDatos">
-                    <form class="form-inline" >
+                    
                       <div class="col-12">	<label for="Ciudad">CIUDAD</label> </div>
-                      <div class="col-12 centrar">	<input type="text" class="form-control" id="Ciudad" placeholder="Ingresar Ciudad de residencia" name="Ciudad"#ciudad="ngModel" [(ngModel)]="personaService.selectedPersona.Ciudad"> </div>
-                    </form>
+                      <div class="col-12 centrar">	<input type="text" class="form-control" id="Ciudad"
+                      placeholder="Ingresar Ciudad de residencia" name="Ciudad" #ciudad="ngModel" [(ngModel)]="personas.ciudad"> </div>
+                   
                   </div>
                   <div class="p-2 FontDatos">
-                    <form class="form-inline">
+                   
                       <div class="col-12"> <label for="DI"> CONTRASEÑA </label> </div>
-                      <div class="col-12 centrar"> <input type="password" class="form-control" id="Cont" placeholder="Ingresar contraseña" name="cont"> </div>
-                    </form>
+                      <div class="col-12 centrar"> <input type="password" class="form-control" id="contras" 
+                      placeholder="Ingresar contraseña" name="cont" > </div>
+                   
                   </div>
                   <div class="p-2 FontDatos">
-                    <form class="form-inline">
+                    
                       <div class="col-12"> <label for="DI2"> CONFIRMAR CONTRASEÑA </label> </div>
-                      <div class="col-12 centrar"> <input type="password" class="form-control" id="Cont1" placeholder="Ingresar  nuevamente la contraseña" name="cont"> </div>
-                    </form>
+                      <div class="col-12 centrar"> <input type="password" class="form-control" id="Cont1" placeholder="Ingresar  nuevamente la contraseña" name="cont" > </div>
+                   
                   </div>
                   <div class="p-2 FontDatos">
-                    <form class="form-inline">
+                    
                       <div class="col-12"> <img width="20%" class="mx-auto d-block" src="https://i.ibb.co/6bDb5SY/02-Perfil-Usuario.png"    > </div>
                       <div class="col-12 centrar"> <button type="button" class="btn-danger2" data-dismiss="modal">Subir imagen</button> </div>
-                    </form>
+                   
                   </div>
              
                   <div class="p-4 FontDatos">
-                        <div class="col-12 centrar"> <button (click)="registrar()" type="button" class="btn-danger" data-dismiss="modal">Registrarse</button> </div>
+                        <div class="col-12 centrar"> <button (click)="registrar(personaForm)" type="button" class="btn-danger" data-dismiss="modal">Registrarse</button> </div>
                     </div>
                   </form>
 
