@@ -14,7 +14,7 @@ import Swal from 'sweetalert2';
 export class RegistrarseComponent{
 
   personas: Personas = {
-    keyRegistro: '',
+    correo: '',
     nombre: '',
     ciudad: '',
     num_identificacion: ''
@@ -25,38 +25,51 @@ export class RegistrarseComponent{
     this.personaService.ListaItem().subscribe(item=>{
       var com = item;
       var tamaño = item.length;
+      var pos0 = item[0].nombre;
       console.log(com);
       console.log(tamaño);
+      console.log(pos0)
     });
-
-   
   }
  
   registrar(personaForm: NgForm){
 
-      this.personaService.InsertarPersona(this.personas);
-
       var nombre = (<HTMLInputElement>document.getElementById("Nombre")).value; 
       var contrasena = (<HTMLInputElement>document.getElementById("contras")).value; 
-    
+      var errorc = true;
+
       firebase.auth().createUserWithEmailAndPassword(nombre,contrasena).catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;
         var errorMessage = error.message;
+        
         console.log(errorCode);
         console.log(errorMessage);
-        // ...
-        
-      });
 
-      Swal.fire({
-        position: 'top-end',
-        type: 'success',
-        title: 'creado con exito',
-        showConfirmButton: false, 
-        timer: 2000 
-      })
-      
+        if(error.code || error.message){
+          errorc = false;
+          if(errorCode){
+            alert(errorCode)
+            }
+            if(errorMessage){
+              alert(errorMessage)  
+            }
+          }else{
+            alert("CORREO CREADO CON EXITO");
+          }
+
+      });    
+
+      if(errorc){
+      this.personaService.InsertarPersona(this.personas);
+       Swal.fire({
+          position: 'top-end',
+          type: 'success',
+          title: 'creado con exito',
+          showConfirmButton: false, 
+          timer: 2000 
+        })
+    }
 
     }
 }

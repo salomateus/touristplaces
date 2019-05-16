@@ -1,5 +1,5 @@
 export interface Personas{
-    keyRegistro?: string;
+    correo?: string;
     nombre?: string;
     num_identificacion?: string;
     ciudad?: string;

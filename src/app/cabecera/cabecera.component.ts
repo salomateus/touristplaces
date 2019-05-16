@@ -20,8 +20,9 @@ export class CabeceraComponent implements OnInit {
   turismop1:number=0;
   turismop2:number=0;
   turismop3:number=0;
-  public IO:number=0;
-  public IS:number=0;
+  IO:number=0;
+  IS:number=0;
+  
 
   Adescuento:number=1;
   Hdescuento:number=0;
@@ -52,8 +53,10 @@ export class CabeceraComponent implements OnInit {
 
     firebase.auth().onAuthStateChanged(function(user) {
       if(user){
+        let idU = user.uid;
         let nombre = user.email;
         document.getElementById('cont2').innerHTML = nombre;
+        console.log("ID DEL USURIO =" + idU);
       }
     });
 

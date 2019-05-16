@@ -20,15 +20,19 @@
 
                     <div class="col_12 FontDatos" class="p-4 FontDatos">REGISTRARSE</div>
 
-                    <input type="hidden" name="$keyregistro" #$keyregistro="ngModel" 
-                    [(ngModel)]="personas.keyregistro">
-
                   <div class="p-2 FontDatos">
    
                       <div class="col-12">	<label for="nombre">CORREO ELECTRÓNICO</label> </div>
                       <div class="col-12 centrar">	<input type="text" class="form-control" id="Nombre"
-                      placeholder="Ingresar Nombre" name="Nombre"  #nombre="ngModel" [(ngModel)]="personas.nombre" > </div> 
+                      placeholder="Ingresar Nombre" name="Nombre"  #correo="ngModel" [(ngModel)]="personas.correo" > </div> 
                   </div>
+
+                  <div class="p-2 FontDatos">
+   
+                    <div class="col-12">	<label for="nombre">NOMBRE</label> </div>
+                    <div class="col-12 centrar">	<input type="text" class="form-control" id="Nombre"
+                    placeholder="Ingresar Nombre" name="Nombre"  #nombre="ngModel" [(ngModel)]="personas.nombre" > </div> 
+                </div>
 
                   <div class="p-2 FontDatos">
                     
