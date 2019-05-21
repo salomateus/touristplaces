@@ -1,3 +1,4 @@
+
 <div class="container-fluid backgroundBody">
 	<div class="row">
 		<div class="col-xl-12 col-1 d-none d-md-block borde3"> </div>
@@ -30,26 +31,34 @@
 						
 						<form class="form-inline " >
 							<div class="col-sm-6 col-xs-12 col-sm-6 col-md-12 col-lg-6 col-xl-6">	<label for="nombre"> NOMBRE </label> </div>
-							<div class="cblk col-sm-6 col-xs-12 col-sm-6 col-md-12 col-lg-6 col-xl-6">	<input type="nombre" class="form-control" id="nombre" placeholder="Ingresar Nombre" name="nombre"> </div>
+							<div class="cblk col-sm-6 col-xs-12 col-sm-6 col-md-12 col-lg-6 col-xl-6">	
+								<label id="VarNombre" >  </label>
+								<!--<input type="nombre" class="form-control" id="nombre" placeholder="Ingresar Nombre" name="nombre">--> </div>
 						</form>
 					</div>
 					
 					<div class="p-2 FontDatos">
 						<form class="form-inline ">
 							<div class="col-xs-12 col-sm-6 col-md-12 col-lg-6 col-xl-6"> <label for="DI"> D.I </label> </div>
-							<div class="cblk col-xs-12 col-sm-6 col-md-12 col-lg-6 col-xl-6 "> <input type="DI" class="form-control" id="DI" placeholder="Ingresar D.I" name="DI"> </div>
+							<div class="cblk col-xs-12 col-sm-6 col-md-12 col-lg-6 col-xl-6 ">
+									<label id="VarDI" >  </label>
+								 <!--<input type="DI" class="form-control" id="DI" placeholder="Ingresar D.I" name="DI">--> </div>
 						</form>
 					</div>
 					<div class="p-2 FontDatos">
 						<form class="form-inline">
 							<div class="col-sm-6 col-xs-12 col-md-12 col-lg-6 col-xl-6"> <label for="ciu"> CIUDAD </label> </div>
-							<div class="cblk col-sm-6 col-xs-12 col-md-12 col-lg-6 col-xl-6"> <input type="ciu" class="form-control" id="ciu" placeholder="Ingresar Ciudad" name="ciu"> </div>
+							<div class="cblk col-sm-6 col-xs-12 col-md-12 col-lg-6 col-xl-6"> 
+								<label id="VarCiudad" >  </label>
+								<!--<input type="ciu" class="form-control" id="ciu" placeholder="Ingresar Ciudad" name="ciu">--> </div>
 						</form>
 					</div>
   					<div class="p-2 FontDatos">
 							<form class="form-inline">
 								<div class="col-sm-6 col-xs-12 col-md-12 col-lg-6 col-xl-6"> <label for="cont">CONTRASEÑA </label> </div>
-								<div class="cblk col-sm-6 col-xs-12 col-md-12 col-lg-6 col-xl-6"> <input type="DI" class="form-control" id="cont" placeholder="********" name="cont"> </div>
+								<div class="cblk col-sm-6 col-xs-12 col-md-12 col-lg-6 col-xl-6"> 
+										<label id="VarContraseña" > *******  </label>
+									<!--<label id="VarCiudad" >  </label><input type="DI" class="form-control" id="cont" placeholder="********" name="cont">--> </div>
 							</form>
 					  </div>
 
@@ -64,7 +73,7 @@
 							<div class="col-xl-5 col-lg-5 col-md-3 col-1 conlast"></div>
 							<div class="col-2 conlast"></div>
 							<div class="col-8 col-xl-4 col-lg-4 col-md-5 conlast"> 
-								<p style="padding-top:5%" class="button conlast">EDITAR INFORMACIÓN </p></div>
+								<button (click)="EditInfo()" style="padding-top:5%" class="button conlast">EDITAR INFORMACIÓN </button></div>
 							<div class="col-2 conlast"></div>
 						</div>  
 					

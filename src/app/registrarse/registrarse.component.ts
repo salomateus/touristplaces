@@ -17,24 +17,17 @@ export class RegistrarseComponent{
     correo: '',
     nombre: '',
     ciudad: '',
-    num_identificacion: ''
+    num_identificacion: '',
+    cant_descuentos: 0,
+    sitio: false
   };
 
   constructor(private personaService: PersonaService) { 
-
-    this.personaService.ListaItem().subscribe(item=>{
-      var com = item;
-      var tamaño = item.length;
-      var pos0 = item[0].nombre;
-      console.log(com);
-      console.log(tamaño);
-      console.log(pos0)
-    });
   }
  
   registrar(personaForm: NgForm){
 
-      var nombre = (<HTMLInputElement>document.getElementById("Nombre")).value; 
+      var nombre = (<HTMLInputElement>document.getElementById("correo")).value; 
       var contrasena = (<HTMLInputElement>document.getElementById("contras")).value; 
       var errorc = true;
 
@@ -54,22 +47,20 @@ export class RegistrarseComponent{
             if(errorMessage){
               alert(errorMessage)  
             }
-          }else{
-            alert("CORREO CREADO CON EXITO");
           }
 
       });    
-
-      if(errorc){
+   
       this.personaService.InsertarPersona(this.personas);
-       Swal.fire({
-          position: 'top-end',
-          type: 'success',
-          title: 'creado con exito',
-          showConfirmButton: false, 
-          timer: 2000 
-        })
-    }
+      Swal.fire({
+         position: 'top-end',
+         type: 'success',
+         title: 'creado con exito',
+         showConfirmButton: false, 
+         timer: 2000 
+       })
+
+     
 
     }
 }

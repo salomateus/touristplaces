@@ -11,7 +11,6 @@ import { map } from 'rxjs/operators';
 
 export class PersonaService {
 
-  
   PersonasCollection: AngularFirestoreCollection<Personas>;
   personas: Observable<Personas[]>;
   PersonaDoc: AngularFirestoreDocument<Personas>;
