@@ -2,28 +2,27 @@ import { Component, OnInit } from '@angular/core';
 import { Personas } from '../modelo/Personas';
 import{PersonaService} from '../services/persona.service';
 import * as firebase from 'firebase';
- 
+import { AngularFirestore } from '@angular/fire/firestore';
+import { Observable } from 'rxjs';
+
 @Component({
   selector: 'app-perfil',
   templateUrl: './perfil.component.html',
   styleUrls: ['./perfil.component.css']
 })
+
 export class PerfilComponent implements OnInit {
 
+  items: Observable<any[]>;
   personas: Personas[];
 
-  constructor(private personaService: PersonaService) { }
+  constructor(private personaService: PersonaService, db: AngularFirestore) {
 
-   EditInfo(){
-
+    this.items = db.collection('Usuarios').valueChanges();
     console.log("EL BOTON FUNCIONA");
 
-    var Uname;
-    var Uemail;
-    var Uciudad;
-    var Undi;
-
     this.personaService.ListaItem().subscribe(item=>{
+      console.log('entra a Lista Item');
       var com = item;
       var tamaño = item.length;
       var position = -1;
@@ -48,12 +47,7 @@ export class PerfilComponent implements OnInit {
           }
 
           Usuario = com[position];
-          Uname = Usuario.nombre;
-          Uemail = Usuario.correo;
-          Undi = Usuario.num_identificacion;
-          Uciudad = Usuario.ciudad;
-          
-
+  
           console.log("laposicion es:" + position);
           console.log('PERFIL SI EXISTE, nombre '+ Usuario.nombre);
           console.log('Correo electronico '+ Usuario.correo);
@@ -73,10 +67,14 @@ export class PerfilComponent implements OnInit {
         } else {
           console.log('PERFIL NO EXISTE');
         }
+
       });
-    
 
     });
+
+   }
+
+   EditInfo(){
     
    }
 

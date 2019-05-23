@@ -3,6 +3,7 @@ import * as firebase from 'firebase';
 import { CabeceraComponent } from './cabecera/cabecera.component';
 import { DescuentosComponent } from './descuentos/descuentos.component' 
 
+
 const config = {
   apiKey: "AIzaSyA9h7yXWuKwW07osly9aFGtqPtP7AIjYjY",
   authDomain: "tourist-places-2a65c.firebaseapp.com",

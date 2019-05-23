@@ -65,27 +65,29 @@
                 <div class="p-2 borde3 "> </div>
                 
                 <div >
-                    <div class="button button1" (click)="home=1" (click)="profile=0" (click)="ayuda=0" (click)="descuento=0"  (click)="actualizacion=0" (click)="turismo=0" style="margin-left:5%">
+                    <div routerLinkActive="active" [routerLink]="['inicio']" class="button button1" >
                         INICIO
                       </div>  
-                      <div class="button button1"  (click)="home=0" (click)="profile=0" (click)="ayuda=0" (click)="descuento=0"  (click)="actualizacion=0" (click)="turismo=1">
+                      <div  routerLinkActive="active" [routerLink]="['turismo']" class="button button1"  >
                           TURISMO
                         </div>
-                        <div class="button button1"  (click)="home=0" (click)="profile=0" (click)="ayuda=0" (click)="descuento=1"  (click)="actualizacion=0" (click)="turismo=0" >
+                        <div routerLinkActive="active" [routerLink]="['descuentos']" class="button button1" >
                             DESCUENTOS 
                          </div>
-                         <div class="button button1"  (click)="home=0" (click)="profile=0" (click)="ayuda=1" (click)="descuento=0"  (click)="actualizacion=0" (click)="turismo=0">
+                         <div routerLinkActive="active" [routerLink]="['ayuda']" class="button button1"  >
                             AYUDA
                           </div>
-                    <div class="button button1"  (click)="home=0" (click)="profile=1" (click)="ayuda=0" (click)="descuento=0"  (click)="actualizacion=0" (click)="turismo=0"> 
+                    <button routerLinkActive="active" [routerLink]="['perfil']" class="button button1"
+                    id="bPerfil" > 
                         PERFIL
-                       </div>           
+                    </button>           
                 </div> 
+                <!--
                 <div class="buttonOculto">
                     <div  class="button button1" style="width:50%"  (click)="home=0" (click)="profile=0" (click)="ayuda=0" (click)="descuento=0"  (click)="actualizacion=1" (click)="turismo=0">
                         SOLICITAR ACTUALIZACIÓN
                      </div>  
-                 </div>
+                 </div>-->
               </div>
         </div>
 
@@ -97,16 +99,17 @@
 
 
 <!-- ****************************************** FINAL DE LA CABECERA ****************************  -->
-
+<router-outlet></router-outlet>
 
 <app-iniciar-sesion ></app-iniciar-sesion>
 <app-registrarse ></app-registrarse>
-<app-inicio *ngIf="home"> </app-inicio>
-<app-perfil *ngIf="profile"> </app-perfil>
-<app-ayuda *ngIf="ayuda"></app-ayuda>
-<app-descuentos *ngIf="descuento" ></app-descuentos>
-<app-actualizacion-d *ngIf="actualizacion"></app-actualizacion-d>
-<app-turismo *ngIf="turismo" > </app-turismo>
-<app-solicitud *ngIf="solicitud"> </app-solicitud>
-
+<!--
+<app-inicio > </app-inicio>
+<app-perfil > </app-perfil>
+<app-ayuda ></app-ayuda>
+<app-descuentos ></app-descuentos>
+<app-actualizacion-d ></app-actualizacion-d>
+<app-turismo > </app-turismo>
+<app-solicitud > </app-solicitud>
+-->
 
