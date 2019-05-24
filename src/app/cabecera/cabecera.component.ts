@@ -25,13 +25,6 @@ export class CabeceraComponent implements OnInit {
     })
   }
 
-  refres(): void{
-    
-    this._router.navigateByUrl("/perfil",{skipLocationChange:true}).then(()=>{
-      console.log(decodeURI(this._location.path()));
-      this._router.navigate([decodeURI(this._location.path())]);
-    });
-  }
 
   static Dentro(){
 

@@ -35,6 +35,9 @@ export class PersonaService {
      this.PersonasCollection.add(usuario);
    }
 
-
+   EditarInformacion(usuario: Personas){
+    this.PersonaDoc = this.afs.doc(`Usuarios/${usuario.id}`);
+    this.PersonaDoc.update(usuario);
+   }
  
 }

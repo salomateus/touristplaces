@@ -24,6 +24,15 @@ export class IniciarSesionComponent implements OnInit {
       var errorMessage = error.message;
       console.log(errorCode);
       console.log(errorMessage);
+
+      if(error){
+        if(error.code){
+        alert(errorCode);
+        }
+        if(errorCode.message){
+          alert(errorMessage);
+        }
+      }
       // ...
     });
   }
