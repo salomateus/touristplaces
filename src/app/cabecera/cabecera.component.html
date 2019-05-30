@@ -31,11 +31,11 @@
 
                 </button>
                 <div class="dropdown-content fonte1 ">
-                <a href="#Home" (click)="home=1" (click)="profile=0" (click)="ayuda=0" (click)="descuento=0"  (click)="actualizacion=0" (click)="turismo=0">INICIO</a>
-                <a href="#Turismo" (click)="home=0" (click)="profile=0" (click)="ayuda=0" (click)="descuento=0"  (click)="actualizacion=0" (click)="turismo=1">TURISMO</a>
-                <a href="#Descuentos "(click)="home=0" (click)="profile=0" (click)="ayuda=0" (click)="descuento=1"  (click)="actualizacion=0" (click)="turismo=0">DESCUENTOS</a>
-                <a href="#Ayuda" (click)="home=0" (click)="profile=0" (click)="ayuda=1" (click)="descuento=0"  (click)="actualizacion=0" (click)="turismo=0">AYUDA</a>
-                <a href="#Perfil" id="btnPerfil" (click)="home=0" (click)="profile=1" (click)="ayuda=0" (click)="descuento=0"  (click)="actualizacion=0" (click)="turismo=0">PERFIL</a>
+                <a href="#Home" routerLinkActive="active" [routerLink]="['inicio']">INICIO</a>
+                <a href="#Turismo" routerLinkActive="active" [routerLink]="['turismo']">TURISMO</a>
+                <a href="#Descuentos" routerLinkActive="active" [routerLink]="['descuentos']" >DESCUENTOS</a>
+                <a href="#Ayuda" routerLinkActive="active" [routerLink]="['ayuda']">AYUDA</a>
+                <a href="#Perfil" id="btnPerfil" routerLinkActive="active" [routerLink]="['perfil']">PERFIL</a>
                 </div>
               </div>
           </div>
