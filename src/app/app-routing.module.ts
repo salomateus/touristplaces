@@ -12,7 +12,8 @@ const routes: Routes = [
 { path:"inicio", component: InicioComponent },
 { path:"descuentos", component: DescuentosComponent },
 { path:"ayuda", component: AyudaComponent },
-{ path:"turismo", component: TurismoComponent }
+{ path:"turismo", component: TurismoComponent },
+{ path: '**', pathMatch: 'full', redirectTo: 'inicio'}
 
 ];
 
