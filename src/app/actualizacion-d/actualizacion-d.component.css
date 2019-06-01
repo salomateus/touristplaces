@@ -50,7 +50,6 @@ padding-bottom: 2%
 }
 .fonta{
 color:white;
-text-align: center;
 font-size:  3em;
 margin-bottom: 3em;
 }
@@ -79,7 +78,7 @@ margin-bottom: 3em;
 .cont3{
 margin-top: 6%;
 display: flex;
-justify-content: center;
+
 height: auto;
 
 }
