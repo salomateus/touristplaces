@@ -28,48 +28,20 @@
                   </div>
 
                   <div class="col-12 backv font3">
-                    <div class="flex flex-column">
+                    <div *ngFor="let descuento of descuentos" class="flex flex-column">
 
                       <div class="p-4 backc3"> 
                         <div class="row">
-                              <div class="col-10">SITIO 1</div>
+                              <div class="col-10"> {{ descuento.Lugar }} <br> {{ descuento.oferta }} </div>
                               
-                              <div class="col-2">
-                             NO
+                              <div class="col-2 ">
+                                <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">add</i></a>
                               </div>
                             </div>
                       </div>
 
-                     <div class="p-4 backc3"> 
-                        <div class="row">
-                              <div class="col-10">SITIO 1</div>
-                              
-                              <div class="col-2">
-                             NO
-                              </div>
-                            </div>
-                      </div>
-
-                      <div class="p-4 backc3"> 
-                          <div class="row">
-                                <div class="col-10">SITIO 1</div>
-                                
-                                <div class="col-2">
-                               NO
-                                </div>
-                              </div>
-                        </div>
-                      
-                      <div class="p-4 backc3"> 
-                        <div class="row">
-                              <div class="col-10">SITIO 1</div>
-                              
-                              <div class="col-2">
-                             NO
-                              </div>
-                            </div>
-                      </div>
                     </div>
+
                   </div>
 
                 </div>
@@ -187,7 +159,7 @@
           <div class="row">
             <div class="col-3"> </div>
             <div class="col-6 Font">
-                <button (click)="info()" type="button" class="btn-dark">VERIFICAR <br> DOCUMENTO</button>
+                <button type="button" class="btn-dark">VERIFICAR <br> DOCUMENTO</button>
             </div>
             <div class="col-"> </div>
           </div>
