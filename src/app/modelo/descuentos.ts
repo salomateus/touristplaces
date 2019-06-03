@@ -1,9 +1,9 @@
 export interface Descuentos{
     id?: string;
-    Lugar?: string;
-    oferta?: string;
-    fecha?: string;
-    cantidad?: number;
+    correo?: string;
+    nombre?: string;
+    num_identificacion?: string;
+    ciudad?: string;
+    cant_descuentos?:Number;
+    sitio?:boolean;
 }
-
-

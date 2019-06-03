@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as firebase from 'firebase';
-import { DescuentosService } from '../services/descuentos.service';
-import { Descuentos } from '../modelo/descuentos';
+import { PersonaService } from '../services/persona.service';
 
 @Component({
   selector: 'app-descuentos',
@@ -11,18 +10,28 @@ import { Descuentos } from '../modelo/descuentos';
 
 export class DescuentosComponent implements OnInit {
 
-  descuentos : Descuentos[];
-
-  constructor(private conexion: DescuentosService) {
-
-    this.conexion.ListaItems().subscribe(item =>{
-      this.descuentos = item;
-      console.log(this.descuentos);
-    })
-   }
+  constructor(private conexion: PersonaService) { }
 
   info(){
- 
+    var iden1 = (<HTMLInputElement>document.getElementById('sel1')).value;
+    var iden2 = (<HTMLInputElement>document.getElementById('ID')).value;
+    
+    this.conexion.ListaItem().subscribe(item=>{
+      var com = item;
+      var tamaño = item.length;
+      console.log(com);
+      console.log(tamaño);
+    });
+
+     /*
+    var iden3 = firebase.database().ref('MusNal');
+   
+    iden3.on('child_added',function(data){
+      console.log(data.val().TDI);
+    });
+    */
+    console.log(iden1);
+    console.log(iden2);
   } 
   
   static Descuentos(){
@@ -41,7 +50,6 @@ export class DescuentosComponent implements OnInit {
   }
 
   ngOnInit() {
-    
   }
 
 }

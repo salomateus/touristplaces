@@ -1,5 +1,5 @@
 export interface Mensaje_Sitio{
-    sitio?: string;
-    mensaje?: string;
-    date?: string;   
+    correo?: string;
+    nombre?: string;
+    message?: string;   
 }
