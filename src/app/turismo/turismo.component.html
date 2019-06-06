@@ -15,40 +15,26 @@
        <div class=" col-12">
          <div class=" colum col-12" >
            <div class="row backgroundGreenmin">
-            <div class="col-xs-7 col-sm-10 col-md-9 col-xl-10"><input class="form-control" id="myInput" type="text" placeholder="Search.."></div>
-            <div class="col-xs-1 col-sm-2 col-md-3 col-xl-2 button"><button type="button" class="btn btn-secondary">Buscar</button> </div>
+           
            </div>
            <div class="row backgroundGreenmin">
               <div class="col-6">
                  <p class="fonta">Sitio turisticos encontrados</p>
               </div>
-              <div class="col-6 turismop1=1">
-                 <nav class="col-12">
-                    <nav aria-label="...">
-                        <ul class="pagination">
-                          <li class="page-item" (click)="turismop1=1" (click)="turismop2=0" (click)="turismop3=0"><a class="page-link" href="#">1</a></li>
-                          <li class="page-item " (click)="turismop1=0" (click)="turismop2=1" (click)="turismop3=0">
-                            <span class="page-link">2  <span class="sr-only">(current)</span>
-                            </span>
-                          </li>
-                          <li class="page-item" (click)="turismop1=0" (click)="turismop2=0" (click)="turismop3=1"><a class="page-link" href="#">3</a></li>
-                        </ul>
-                      </nav>
-                 </nav>
-              </div>
+              
               <div class="col-3">
        
               </div>
             </div>
          </div>
       <div>
-        <app-turismop1 *ngIf="turismop1"></app-turismop1>
+        <app-turismop1 ></app-turismop1>
       </div>
       <div>
-          <app-turismop2 *ngIf="turismop2"></app-turismop2>
+          <app-turismop2></app-turismop2>
       </div>
       <div>
-        <app-turismop3 *ngIf="turismop3"></app-turismop3>
+        <app-turismop3 ></app-turismop3>
       </div>
 
 

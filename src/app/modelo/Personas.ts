@@ -6,4 +6,5 @@ export interface Personas{
     ciudad?: string;
     cant_descuentos?:Number;
     sitio?:boolean;
+    adquirido?: Array<string>;
 }

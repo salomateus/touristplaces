@@ -30,16 +30,34 @@
                   <div class="col-12 backv font3">
                     <div *ngFor="let descuento of descuentos" class="flex flex-column">
 
-                      <div class="p-4 backc3"> 
+                      <div (click)="accesState(descuento)" class="p-4 backc3 btn btn-info btn-block" data-toggle="modal" data-target="#ConfirmModal" 
+                      type="button"> 
                         <div class="row">
                               <div class="col-10"> {{ descuento.Lugar }} <br> {{ descuento.oferta }} </div>
-                              
-                              <div class="col-2 ">
-                                <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">add</i></a>
+
+                              <div class="col-2 ">   
+                                <a ><img width="100%" src="https://i.ibb.co/pfWsWjL/plus.png">  </a>
+
                               </div>
-                            </div>
+
+                             
+                            
                       </div>
 
+                    </div>
+
+                    <div *ngIf="editState && descuentoToEdit.Lugar == descuento.Lugar" class="col-12 backgroundGen">
+                        <div class="row">
+                          <div class="col-12 font4"> Esta seguro que desea adquirir el descuento para: {{ descuento.Lugar}} 
+                            <br> Recuerde que el descuento esta disponible hasta: <div  class="font3">{{ descuento.fecha }}</div>
+                            <br> Este descuento Ocupa diferentes gastos que pueden depender del sitio turistico, 
+                            incluyendo compras en comida, objetos de regalo, etc. 
+                          </div>    
+                          <div class="col-2"><button (click)="clearState()" type="button" class="btn btn-danger">Cancelar</button></div>
+                          <div class="col-6"></div>
+                          <div class="col-2"> <button (ngSubmit)="Confirmar(descuento,descuento.Lugar)" (click)="Confirmar(descuento,descuento.Lugar)" type="button" class="btn btn-success">Confirmar</button></div>
+                        </div>
+                      </div>
                     </div>
 
                   </div>
@@ -47,15 +65,6 @@
                 </div>
               </div>
 
-            </div>
-
-            <div class="row">
-              <div class="col-xl-9 col-md-9 col-sm-12 p-3 font1">
-                Productos Seleccionados: 
-              </div>  
-              <div class="col-xl-3 col-md-3 col-sm-12 p-3 ">
-                <div class="button1">CONFIRMAR ADQUISICIÓN</div> 
-              </div>  
             </div>
         </div>
         </div>
@@ -69,28 +78,26 @@
              <div class="col-12 backc4 font2">
                 <div class="flex flex-column">
 
-                  <div class="backc5">
+                  <div id="No_dsc" class="backc5">
+                    ACTUALMENTE NO DISPONE DE NINGÚN DESCUENTO
+                  </div>
+
+                  <div id="Si_dsc" class="backc5">
                     <div class="row">
-                      <div class="col-6">SITIO 1</div>
-                      <div class="col-6" style="text-align:right">25% <br>07/11/19 </div>
+                      <div id="name_adquirido" class="col-6">SITIO 1</div>
+                      <!-- <div class="col-6" style="text-align:right">25% <br>07/11/19 </div>-->
                     </div>
                   </div>
-                  <div class="backc5"> 
-                      <div class="row">
-                          <div class="col-6">SITIO 2</div>
-                          <div class="col-6" style="text-align:right">20% <br>12/06/19 </div>
-                      </div>
-                    </div>
 
                 </div>
              </div>
 
-             <div class="row">
+             <div  class="row">
                <div class="col-4"></div>
                <div class="col-7 backc6">
                   <div class="row">
                     <div class="col-7 font3"> TOTAL <br> ADQUIRIDO </div>
-                    <div class="col-5 font"> 2/5 </div>
+                    <div id="canti" class="col-5 font">  </div>
                   </div>
                </div>
              </div>
@@ -129,15 +136,22 @@
         <div class="p-3">
           <div class="row">
             <div class="col-6 Font2">
-              <label for="sel1">Seleccionar tipo de documento</label>
+              <label for="sel1">Seleccionar el Lugar Turistico</label>
             </div>
             <div class="col-6">
               
                 
                 <select class="form-control" id="sel1" name="sellist1">
-                  <option>Cédula de ciudadanía</option>
-                  <option>Tarjeta de identidad</option>
-                  <option>Cédula de extranjeria</option>
+                  <option>Jardín Botánico</option>
+                  <option>Biblioteca Luis Ángel Arango</option>
+                  <option>Maloka</option>
+                  <option>Museo Nacional</option>
+                  <option>Museo del oro</option>
+                  <option>Cerro de monserrate</option>
+                  <option>Museo de la independencia - Casa del Florero</option>
+                  <option>Museo Nacional de Colombia</option>
+                  <option>Planetario</option>
+                  <option>Teatro Colón</option>
                 </select>
 
             </div>
@@ -146,7 +160,7 @@
         <div class="p-3">
             <div class="row">
                 <div class="col-6 Font2">
-                    <label for="DI">Documento de Identificación</label>
+                    <label for="DI">D.Identificación del visitante</label>
                 </div>
                 <div class="col-6">
                     <input type="DI" class="form-control" id="ID">
@@ -159,7 +173,7 @@
           <div class="row">
             <div class="col-3"> </div>
             <div class="col-6 Font">
-                <button type="button" class="btn-dark">VERIFICAR <br> DOCUMENTO</button>
+                <button type="button" (click)="verificar()" class="btn-dark">VERIFICAR <br> DOCUMENTO</button>
             </div>
             <div class="col-"> </div>
           </div>

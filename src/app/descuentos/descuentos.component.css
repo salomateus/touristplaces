@@ -34,14 +34,13 @@
 }
 
 .backc3{
-    background-color: rgb(203,227,237,0.5);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
+   
     margin-top: 2%;
     margin-bottom: 2%;
-    cursor: pointer;
+    font-size: 24px;
 }
+
+
 
 .backc4{
     background-color: rgb(43,66,113);
@@ -112,6 +111,16 @@
     font-family: BRITANIC;
     color: rgb(49,49,49);
     font-size: 1.4em;
+}
+.font4{
+    font-family: BRITANIC;
+    color: rgb(44, 44, 44);
+    font-size: 1em;
+    line-height: 30px;
+}
+
+.backgroundGen{
+    background-color:rgb(192,192,192);
 }
 .button1{
     width: 100%;
@@ -199,4 +208,28 @@
     -moz-border-radius: 22px 22px 22px 22px;
     -webkit-border-radius: 22px 22px 22px 22px;
     border: 0px solid #000000;
+}
+
+.modal-header{
+    background-color: rgba(75, 75, 75, 0.0);
+}
+
+.modal-title{
+    text-align: center;
+}
+
+.modal-content{
+    background-color: rgba(204, 204, 204, 0.7);
+    border: none;
+    padding: 5%;
+    border-radius: 0px 0px 0px 0px;
+    border-radius: 0px 0px 0px 0px;
+    border: 0px solid #000000;
+    width:100%;
+    height: auto;
+}
+
+.material-icons {
+    cursor: pointer;
+    size: 200%;
 }

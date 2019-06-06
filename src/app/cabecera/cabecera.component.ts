@@ -41,7 +41,6 @@ export class CabeceraComponent implements OnInit {
         let idU = user.uid;
         let nombre = user.email;
         document.getElementById('cont2').innerHTML = nombre;
-        console.log("ID DEL USURIO =" + idU);
       }
     });
 

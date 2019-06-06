@@ -142,5 +142,6 @@
 .cblk{
     direction: flex;
     justify-content: center;
+    color: aqua;
 }
 
