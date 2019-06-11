@@ -142,6 +142,6 @@
 .cblk{
     direction: flex;
     justify-content: center;
-    color: aqua;
+    color: rgb(95, 95, 95);
 }
 

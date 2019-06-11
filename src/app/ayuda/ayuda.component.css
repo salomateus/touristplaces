@@ -55,6 +55,14 @@ margin: 6% 0% 6% 0%;
 padding: 0% 2% 0% 3%;
 width: 100%;
 }
+
+.Inte{
+  background-color: rgba(54, 54, 54, 0.801);
+  margin: 6% 0% 6% 0%;
+  padding: 3% 2% 5% 3%;
+  width: 100%;
+  }
+
 .cont{
   width:  calc(100% - 45px);
 }
@@ -232,6 +240,17 @@ width:auto;
   font-family: BRITANIC;
   text-shadow: 2px 2px 4px black;
 }
+.FontC21{
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  text-align: center;
+  font-size: 2.7em;
+  color: white;
+  line-height: 45px;
+  font-family: BRITANIC;
+  text-shadow: 2px 2px 4px black;
+}
 @media screen and (max-width: 1800px) {
   .FontC2 {
     font-size: 30px;
@@ -322,6 +341,17 @@ width:auto;
   text-align: center;
   font-size: 3.125em;
   color: white;
+  line-height: 30px;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  font-family: BRITANIC;
+}
+
+.FontC51{
+  padding-top: 2%;
+  text-align: center;
+  font-size: 3.125em;
+  color: rgb(151, 151, 151);
   line-height: 30px;
   margin-top: 2%;
   margin-bottom: 3%;

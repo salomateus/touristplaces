@@ -39,9 +39,9 @@ export class PerfilComponent implements OnInit {
       console.log(com);
       console.log(tamaño);
 
+     
       firebase.auth().onAuthStateChanged(function(user) {
         if (user) {
-
           var VarNombre = document.getElementById('VarNombre');
           var VarDI = document.getElementById('VarDI');
           var VarCiudad = document.getElementById('VarCiudad');
@@ -78,14 +78,8 @@ export class PerfilComponent implements OnInit {
           vardesa.innerHTML = `
           ${Usuario.correo}
           `
-
-         
-        } else {
-          console.log('PERFIL NO EXISTE');
         }
-
-      });
-
+      })
     });
 
    }

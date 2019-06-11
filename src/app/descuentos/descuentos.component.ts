@@ -71,7 +71,15 @@ export class DescuentosComponent implements OnInit {
           }
 
           Usuario = com[position];
-          console.log(Usuario.adquirido[0]);
+
+          if(Usuario.sitio == true){
+            console.log("En descuentos se detecta que el usuario es AMD_TURISMO");
+            document.getElementById('Parte1').style.display = 'none';
+            
+          }else{
+            console.log("En descuentos se detecta que el usuario es NORMAL");
+            document.getElementById('Parte2').style.display = 'none';
+          }
 
           canti.innerHTML=`
           ${Usuario.cant_descuentos} / 5
@@ -90,12 +98,8 @@ export class DescuentosComponent implements OnInit {
             `
            
           }
-         
-        } else {
-          console.log('PERFIL NO EXISTE');
         }
-
-      });
+      })
     })
     
 
@@ -282,21 +286,7 @@ export class DescuentosComponent implements OnInit {
     }
   }
   
-  static Descuentos(){
-    firebase.auth().onAuthStateChanged(function(user) {
-      if(user){
-        let nombre4 = user.email;
-
-        if(nombre4=="museonacional@gmail.com"){
-          console.log('ERES UN USUARIO DE SITIO TURISTICO');
-        }else{
-          console.log('ERES UN USUARIO NORMAL')
-        }
-      }
-
-    });
-  }
-
+ 
   ngOnInit() {
     
   }

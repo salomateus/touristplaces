@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import * as firebase from 'firebase';
 import { Router} from '@angular/router'
 import { Location } from '@angular/common';
+import {PersonaService} from'../services/persona.service'
 
 @Component({
   selector: 'app-cabecera',
@@ -12,7 +13,42 @@ import { Location } from '@angular/common';
 export class CabeceraComponent implements OnInit {
   
 
-  constructor(public _router: Router, public _location: Location) {
+  constructor(public _router: Router, public _location: Location, private personaService: PersonaService) {
+
+    this.personaService.ListaItem().subscribe(item=>{
+      var com = item;
+      var tamaño = item.length;
+      var position = -1;
+      var Usuario;
+      
+
+      firebase.auth().onAuthStateChanged(function(user) {
+        if (user) {
+
+          var email = user.email;
+
+          for (let y = 0; y < tamaño; y++) {
+            if(email == com[y].correo){
+              y = tamaño;
+            } 
+            position++;
+          }
+
+          Usuario = com[position];
+
+          if(Usuario.sitio == true){
+            document.getElementById('btn_act').style.display = 'block';
+            
+          }else{
+            document.getElementById('btn_act').style.display = 'none';
+          }
+
+        }else{
+          document.getElementById('btn_act').style.display = 'none';
+        }
+      })
+    })
+
   }
 
   cerr(){

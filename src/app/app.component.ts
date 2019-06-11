@@ -31,7 +31,6 @@ export class AppComponent {
         console.log('Sesion iniciada');
         // User is signed in.
 
-        DescuentosComponent.Descuentos();
         CabeceraComponent.Dentro();
         var displayName = user.displayName;
         var email = user.email;
